@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:layout_gravity="center_horizontal"
+    android:gravity="center_vertical"
+    android:background="@color/black_overlay" >
+    <RelativeLayout 
+        android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"		
+    	android:background="@drawable/statusdown" >
+        <TextView
+        android:id="@+id/status_lbl" 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:paddingTop="10dp"
+        android:text="@string/status_text"/>
+
+    <EditText
+        android:id="@+id/status_text"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/status_lbl"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="5dp"
+        android:layout_centerHorizontal="true"
+        android:lines="3"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:background="@drawable/rounded_corner_new" />
+
+    <TextView
+        android:id="@+id/datetime_lbl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+ 		android:layout_below="@+id/status_text"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="15dp"
+        android:text="@string/date_and_time" />
+    <TextView 
+        android:id="@+id/date_and_time"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="30dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="5dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/rounded_corner_new"
+        android:layout_below="@+id/datetime_lbl"
+        android:gravity="center_horizontal|center_vertical"/>
+        <TextView
+        android:id="@+id/suggest_val_lbl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+ 		android:layout_below="@+id/date_and_time"
+        android:paddingLeft="20dp"
+        android:layout_marginTop="5dp"
+        android:text="@string/suggest_value" />
+        <TextView 
+        android:id="@+id/suggest_value"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="30dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="25dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/rounded_corner_new"
+        android:gravity="center_horizontal|center_vertical"
+        android:layout_below="@+id/suggest_val_lbl"/>
+            <RelativeLayout 
+                android:id="@+id/btn_container"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/suggest_value">
+                
+                <Button 
+            android:id="@+id/cancel_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_marginLeft="30dp"
+            android:text="@string/cancel"
+            android:layout_marginTop="10dp"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/btn_gray1"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/white"/> 
+       
+       <Button 
+            android:id="@+id/sub_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_marginRight="30dp"
+            android:text="@string/submit"
+            android:layout_marginTop="10dp"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/btn_red1"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/white"/> 
+            </RelativeLayout>
+    </RelativeLayout>
+    
+            
+
+</RelativeLayout>

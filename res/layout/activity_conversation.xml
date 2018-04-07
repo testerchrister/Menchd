@@ -1,0 +1,73 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ConversationActivity"
+    android:background="@android:color/black"
+    android:id="@+id/main_outer"  >
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"        
+        android:background="@drawable/topnav"
+        android:orientation="horizontal"
+        android:id="@+id/topnav" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_gravity="center|center_horizontal"
+            android:text="@string/conversation"
+            android:textColor="@android:color/white" />
+         <TextView
+            android:id="@+id/prof_user_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_gravity="center|center_horizontal"
+            android:textColor="@android:color/white" />
+    </LinearLayout>
+
+    <include
+        layout="@layout/conversation_user" />
+
+    <RelativeLayout
+        android:id="@+id/no_item_container" 
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/conversation_user"
+        android:background="@android:color/white">
+        <TextView 
+             android:id="@+id/no_item"
+             android:layout_width="fill_parent"
+             android:layout_height="wrap_content"
+             android:padding="5dp"
+             android:layout_gravity="center_horizontal"/>
+    </RelativeLayout>
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/no_item_container"
+        android:id="@+id/list_view_container"
+        android:orientation="vertical">
+
+        <ListView 
+            android:id="@+id/list_view"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@drawable/loginbg">
+            
+        </ListView>
+
+        <RelativeLayout
+            android:id="@+id/msg_editor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+             >
+            <include layout="@layout/message_action"/>
+    </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

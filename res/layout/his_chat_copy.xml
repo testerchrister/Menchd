@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  android:id="@+id/chat_wrapper"
+  android:layout_width="fill_parent"
+  android:layout_height="wrap_content"
+  android:orientation="horizontal"
+  android:padding="3dp">
+
+    <LinearLayout 
+        android:id="@+id/left_outer"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_toRightOf="@+id/user_img">
+       <LinearLayout 
+           android:id="@+id/content_top"
+           android:layout_width="fill_parent"
+           android:layout_height="wrap_content">
+           <ImageView 
+               android:id="@+id/time_img"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:src="@drawable/chattimeb" />
+           <TextView 
+               android:id="@+id/ago_time"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:paddingLeft="2dp"
+               android:textSize="10sp" />
+           
+       </LinearLayout>
+       <RelativeLayout 
+           android:id="@+id/content_bottom"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:orientation="horizontal">
+
+
+			<TextView
+			    android:id="@+id/chat_message"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:background="@drawable/chat_bubble_gray"
+			    android:padding="5dp"
+			    android:textColor="@android:color/white"
+				android:layout_toRightOf="@+id/chat_img"/>
+   	      <ImageView 
+          		android:id="@+id/chat_image"
+            	android:layout_width="48dp"
+            	android:layout_height="48dp"
+            	android:background="@drawable/chat_bubble_gray"
+            	android:padding="2dp"
+            	android:layout_marginTop="2dp"
+            	android:layout_toRightOf="@+id/chat_message"/>
+         <ImageView 
+             	android:id="@+id/chat_map"
+            	android:layout_width="48dp"
+            	android:layout_height="48dp"
+            	android:background="@drawable/chat_bubble_gray"
+            	android:src="@drawable/icon_map"
+            	android:padding="2dp"
+            	android:layout_marginTop="2dp"
+            	android:layout_toRightOf="@+id/chat_image"/>			
+				<ImageView 
+			    android:id="@+id/chat_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/pointergray"                
+                android:layout_marginTop="6dp"/>
+          
+       </RelativeLayout>
+    </LinearLayout>
+      <ImageView 
+       android:id="@+id/user_img"
+       android:layout_height="35dp"
+       android:layout_width="35dp"
+       android:layout_alignParentLeft="true"
+       android:src="@drawable/btnaddfav_gray"/>
+</RelativeLayout>

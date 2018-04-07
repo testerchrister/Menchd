@@ -1,0 +1,7 @@
+<resources>
+
+    <color name="black_overlay">#99000000</color>
+    <color name="mutual_fav_back">#ecbab6</color>
+    <color name="dark_gray">#313131</color>
+    <color name="white">#ffffff</color>
+</resources>

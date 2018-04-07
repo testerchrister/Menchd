@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+ <item
+        android:id="@+id/nearby"
+        android:title="Best Nearby"/>
+	
+	<item
+        android:id="@+id/food"
+        android:title="Food"/>
+      
+    <item
+        android:id="@+id/nightlife"
+        android:title="Nightlife"/>
+    <item
+        android:id="@+id/shops"
+        android:title="Shops"/>
+    <item
+        android:id="@+id/sights"
+        android:title="Sights"/>
+    <item
+        android:id="@+id/arts"
+        android:title="Arts"/>
+
+</menu>

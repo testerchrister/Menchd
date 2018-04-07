@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="10dp"
+    android:weightSum="1" >
+    <LinearLayout 
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight=".25">
+        <ImageView
+            android:id="@+id/user_image"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:src="@drawable/userdefault"/>
+    </LinearLayout>
+	<LinearLayout 
+	    android:layout_height="wrap_content"
+	    android:layout_width="0dp"
+	    android:layout_weight=".5"
+	    android:orientation="vertical"
+	    android:paddingTop="5dp">
+	    <TextView 
+	        android:id="@+id/user_name"
+	        android:layout_height="wrap_content"
+	        android:layout_width="fill_parent"
+	        android:textSize="12sp"
+	        android:textStyle="bold"
+	        android:text="Aaron"/>
+	    <TextView 
+	        android:id="@+id/age_city"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:text="19,Kochi"/>
+	    <TextView 
+	        android:id="@+id/perc"
+	        android:layout_height="wrap_content"
+	        android:layout_width="fill_parent"
+	        android:textColor="@color/red"
+	        android:text="40%"/>
+	</LinearLayout>
+	<LinearLayout 
+	    android:layout_width="0dp"
+	    android:layout_height="fill_parent"
+	    android:layout_weight=".25"
+	    android:gravity="center_vertical"
+	    android:orientation="vertical">
+
+		<Button
+		    android:id="@+id/unblock_btn"
+		    android:layout_width="wrap_content"
+		    android:layout_height="30dp"
+		    android:background="@android:color/background_dark"
+		    android:text="UNBLOCK"
+		    android:textColor="@android:color/white"
+		    android:textSize="12sp"
+		    android:textStyle="bold" />
+	
+	</LinearLayout>
+</LinearLayout>

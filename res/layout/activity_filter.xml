@@ -1,0 +1,585 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FilterActivity"
+    android:background="@android:color/background_dark" >
+<RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/topnav"
+        android:orientation="horizontal"
+        android:padding="5dp"
+        android:id="@+id/topnav" >
+        <ImageButton
+             android:id="@+id/clear_settings"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_alignParentLeft="true"
+             android:layout_centerVertical="true"
+             android:background="@null"
+             android:src="@drawable/btnreset" /> 
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"   
+            android:layout_centerInParent="true"         
+            android:text="@string/filter"
+            android:textColor="@android:color/white" />
+        <ImageButton
+             android:id="@+id/save_settings"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_alignParentRight="true"
+             android:layout_centerVertical="true"
+             android:background="@null"
+             android:src="@drawable/btngo" />        
+    </RelativeLayout>
+
+        <ScrollView 
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:layout_below="@+id/topnav">
+
+<LinearLayout
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:id="@+id/basics_layout"
+	android:background="@drawable/loginbg"
+	android:padding="5dp"
+	android:orientation="vertical" >
+	<RelativeLayout
+	    android:id="@+id/age_settings"
+		android:layout_width="match_parent"
+		android:layout_height="50dp"
+		android:padding="2dp"
+		android:background="@color/profile_light_gray">
+		<TextView 
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_alignParentLeft="true"
+			android:layout_centerVertical="true"
+			android:text="@string/age"/>
+			
+		<TextView
+		    android:id="@+id/set_age" 
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_centerInParent="true"
+			android:layout_centerVertical="true"
+			android:textColor="@color/red"
+			android:text="@string/double_hyphen"/>
+		<ImageButton 
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_alignParentRight="true"
+			android:layout_centerVertical="true"
+			android:background="@null"
+			android:src="@drawable/btnarrow"/>
+	</RelativeLayout>
+
+	<RelativeLayout
+	    android:id="@+id/height_settings"
+		android:layout_width="match_parent"
+		android:layout_height="50dp"
+		android:padding="2dp"
+		android:background="@color/profile_dark_gray">
+		<TextView 
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_alignParentLeft="true" 
+			android:text="@string/height"
+			android:layout_centerVertical="true"/>
+			
+		<TextView
+		    android:id="@+id/set_height"  
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_centerInParent="true"
+			android:textColor="@color/red"
+			android:text="@string/double_hyphen"
+			android:layout_centerVertical="true"/>
+		<ImageButton 
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_alignParentRight="true"
+			android:layout_centerVertical="true"
+			android:background="@null"
+			android:src="@drawable/btnarrow"/>		
+	</RelativeLayout>	
+	<RelativeLayout
+	    android:id="@+id/weight_settings"
+		android:layout_width="match_parent"
+		android:layout_height="50dp"
+		android:padding="2dp"
+		android:background="@color/profile_light_gray">
+		<TextView 
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_alignParentLeft="true" 
+			android:text="@string/weight"
+			android:layout_centerVertical="true"/>
+			
+		<TextView
+		    android:id="@+id/set_weight"   
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_centerInParent="true"
+			android:textColor="@color/red"
+			android:text="@string/double_hyphen"
+			android:layout_centerVertical="true"/>
+		<ImageButton 
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_alignParentRight="true"
+			android:layout_centerVertical="true"
+			android:background="@null"
+			android:src="@drawable/btnarrow"/>	
+	</RelativeLayout> 
+	<RelativeLayout
+		android:layout_width="match_parent"
+		android:layout_height="50dp"
+		android:padding="2dp"
+		android:background="@color/profile_dark_gray">
+		<TextView 
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			 android:layout_alignParentLeft="true"
+			android:text="@string/body_type"
+			android:layout_centerVertical="true"/>
+			
+		<TextView 
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_centerInParent="true"
+			android:text="@string/colon"
+			android:layout_centerVertical="true"/>
+		<Spinner
+				android:id="@+id/body_type"
+				android:layout_width="160dp"
+				android:layout_height="wrap_content"
+				android:layout_alignParentRight="true"
+				android:entries="@array/body_array"
+				android:prompt="@string/array_prompt"
+				android:background="@null"
+				android:paddingLeft="5dp" 
+				android:layout_centerVertical="true"/>
+	</RelativeLayout>			 
+	 
+
+	<RelativeLayout
+		android:layout_width="match_parent"
+		android:layout_height="50dp"
+		android:padding="2dp"
+		android:background="@color/profile_light_gray">
+		<TextView 
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_alignParentLeft="true" 
+			android:text="@string/ethnicity"
+			android:layout_centerVertical="true"/>
+			
+		<TextView 
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_centerInParent="true"
+			android:text="@string/colon"
+			android:layout_centerVertical="true"/>
+		<Spinner
+				android:id="@+id/ethnicity"
+				android:layout_width="160dp"
+				android:layout_height="wrap_content"
+				android:layout_alignParentRight="true"
+				android:entries="@array/ethni_array"
+				android:prompt="@string/array_prompt"
+				android:background="@null"
+				android:paddingLeft="5dp" 
+				android:layout_centerVertical="true" />
+	</RelativeLayout>  	 	 	 
+	<RelativeLayout
+		android:layout_width="match_parent"
+		android:layout_height="50dp"
+		android:padding="2dp"
+		android:background="@color/profile_dark_gray">
+		<TextView
+			
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_alignParentLeft="true" 
+			android:text="@string/horoscope"
+			android:layout_centerVertical="true"/>
+			
+		<TextView 
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_centerInParent="true" 
+			android:text="@string/colon"
+			android:layout_centerVertical="true"/>
+		<Spinner
+				android:id="@+id/horoscope"
+				android:layout_width="160dp"
+				android:layout_height="wrap_content"
+				android:layout_alignParentRight="true"
+				android:entries="@array/horoscop_array"
+				android:background="@null"
+				android:paddingLeft="5dp"
+				android:layout_centerVertical="true" />
+	</RelativeLayout>
+	 
+		<RelativeLayout
+			android:layout_width="match_parent"
+			android:layout_height="50dp"
+			android:padding="2dp"
+			android:background="@color/profile_light_gray">
+
+			<TextView 
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="@string/college"
+			android:layout_alignParentLeft="true"
+			android:layout_centerVertical="true"/>
+			<TextView 
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_centerInParent="true" 	
+			android:text="@string/colon"
+			android:layout_centerVertical="true"/>
+
+			<Spinner
+				android:id="@+id/university"
+				android:layout_width="160dp"
+				android:layout_height="wrap_content"
+				android:layout_alignParentRight="true"
+				android:entries="@array/university_array"
+				android:prompt="@string/university_prompt"
+				android:background="@null"
+				android:paddingLeft="5dp"
+				android:layout_centerVertical="true"  />
+			
+		</RelativeLayout>
+		<RelativeLayout
+		android:layout_width="match_parent"
+		android:layout_height="50dp"
+		android:padding="2dp"
+		android:background="@color/profile_dark_gray">
+		<TextView 
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_alignParentLeft="true" 
+			android:text="@string/income"
+			android:layout_centerVertical="true"/>
+			
+		<TextView 
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_centerInParent="true"
+			android:text="@string/colon"
+			android:layout_centerVertical="true"/>
+		<Spinner
+				android:id="@+id/income"
+				android:layout_width="160dp"
+				android:layout_height="wrap_content"
+				android:layout_alignParentRight="true"
+				android:entries="@array/income_array "
+				android:prompt="@string/array_prompt"
+				android:background="@null"
+				android:paddingLeft="5dp"
+				android:layout_centerVertical="true" />
+	</RelativeLayout>  	
+	<RelativeLayout
+	    android:id="@+id/location_settings"
+		android:layout_width="match_parent"
+		android:layout_height="50dp"
+		android:padding="2dp"
+		android:background="@color/profile_light_gray">
+		<TextView 
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_alignParentLeft="true" 
+			android:text="@string/location"
+			android:layout_centerVertical="true"/>
+			
+		<TextView
+		    android:id="@+id/location_settings_txt" 
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_centerInParent="true"
+			android:textColor="@color/red"
+			android:text="@string/double_hyphen"
+			android:layout_centerVertical="true"/>
+		<ImageButton 
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_alignParentRight="true"
+			android:layout_centerVertical="true"
+			android:background="@null"
+			android:src="@drawable/btnarrow"/>	
+		</RelativeLayout>  	
+		<RelativeLayout
+			android:layout_width="match_parent"
+			android:layout_height="50dp"
+			android:padding="2dp"
+			android:background="@color/profile_dark_gray">
+		<TextView 
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_alignParentLeft="true" 
+			android:text="@string/smoke"
+			android:layout_centerVertical="true"/>
+			
+		<TextView 
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_centerInParent="true"
+			android:text=":"
+			android:layout_centerVertical="true"/>
+		<Spinner
+				android:id="@+id/smoke"
+				android:layout_width="160dp"
+				android:layout_height="wrap_content"
+				android:layout_alignParentRight="true"
+				android:entries="@array/smoke_array"
+				android:prompt="@string/array_prompt"
+				android:background="@null"
+				android:paddingLeft="5dp"
+				android:layout_centerVertical="true"  />
+	</RelativeLayout>
+	<RelativeLayout
+		android:layout_width="match_parent"
+		android:layout_height="50dp"
+		android:padding="2dp"
+		android:background="@color/profile_light_gray">
+		<TextView 
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			 android:layout_alignParentLeft="true"
+			android:text="@string/drink"
+			android:layout_centerVertical="true"/>
+			
+		<TextView 
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_centerInParent="true"
+			android:text=":"
+			android:layout_centerVertical="true"/>
+		<Spinner
+				android:id="@+id/drink"
+				android:layout_width="160dp"
+				android:layout_height="wrap_content"
+				android:layout_alignParentRight="true"
+				android:entries="@array/drink_array"
+				android:prompt="@string/array_prompt"
+				android:background="@null"
+				android:paddingLeft="5dp"
+				android:layout_centerVertical="true"  />
+	</RelativeLayout>
+<RelativeLayout
+		android:layout_width="match_parent"
+		android:layout_height="50dp"
+		android:padding="2dp"
+		android:background="@color/profile_light_gray">
+		<TextView 
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_alignParentLeft="true" 
+			android:text="@string/weed"
+			android:layout_centerVertical="true"/>
+			
+		<TextView 
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_alignParentBottom="true"
+			android:text=":"
+			android:layout_centerVertical="true"/>
+		<Spinner
+				android:id="@+id/weed"
+				android:layout_width="160dp"
+				android:layout_height="wrap_content"
+				android:layout_alignParentRight="true"
+				android:entries="@array/weed_array"
+				android:prompt="@string/array_prompt"
+				android:background="@null"
+				android:paddingLeft="5dp"
+				android:layout_centerVertical="true"  />
+	</RelativeLayout> 
+	<RelativeLayout
+		android:layout_width="match_parent"
+		android:layout_height="50dp"
+		android:padding="2dp"
+		android:background="@color/profile_dark_gray">
+		<TextView 
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_alignParentLeft="true" 
+			android:text="@string/drug"
+			android:layout_centerVertical="true"/>
+			
+		<TextView 
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_centerInParent="true"
+			android:text=":"
+			android:layout_centerVertical="true"/>
+		<Spinner
+				android:id="@+id/drug"
+				android:layout_width="160dp"
+				android:layout_height="wrap_content"
+				android:layout_alignParentRight="true"
+				android:entries="@array/drug_drray"
+				android:prompt="@string/array_prompt"
+				android:background="@null"
+				android:paddingLeft="5dp"
+				android:layout_centerVertical="true"  />
+	</RelativeLayout> 
+<RelativeLayout
+		android:layout_width="match_parent"
+		android:layout_height="50dp"
+		android:padding="2dp"
+		android:background="@color/profile_light_gray">
+		<TextView 
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_alignParentLeft="true" 
+			android:text="@string/term"
+			android:layout_centerVertical="true"/>
+			
+		<TextView 
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_centerInParent="true"
+			android:text=":"
+			android:layout_centerVertical="true"/>
+		<Spinner
+				android:id="@+id/term"
+				android:layout_width="160dp"
+				android:layout_height="wrap_content"
+				android:layout_alignParentRight="true"
+				android:entries="@array/term_array"
+				android:prompt="@string/array_prompt"
+				android:background="@null"
+				android:paddingLeft="5dp"
+				android:layout_centerVertical="true"  />	
+	</RelativeLayout> 
+	<RelativeLayout
+		android:layout_width="match_parent"
+		android:layout_height="50dp"
+		android:padding="2dp"
+		android:background="@color/profile_dark_gray">
+		<TextView 
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			 android:layout_alignParentLeft="true"
+			android:text="@string/diet"
+			android:layout_centerVertical="true"/>
+			
+		<TextView 
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_centerInParent="true"
+			android:text=":"
+			android:layout_centerVertical="true"/>
+		<Spinner
+				android:id="@+id/diet"
+				android:layout_width="160dp"
+				android:layout_height="wrap_content"
+				android:layout_alignParentRight="true"
+				android:entries="@array/diet_array"
+				android:prompt="@string/array_prompt"
+				android:background="@null"
+				android:paddingLeft="5dp"
+				android:layout_centerVertical="true"  />	
+	</RelativeLayout>
+	<RelativeLayout
+		android:layout_width="match_parent"
+		android:layout_height="50dp"
+		android:padding="2dp"
+		android:background="@color/profile_light_gray">
+		<TextView 
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_alignParentLeft="true" 
+			android:text="@string/pets"
+			android:layout_centerVertical="true"/>
+			
+		<TextView 
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_centerInParent="true"
+			android:text=":"
+			android:layout_centerVertical="true"/>
+		<Spinner
+				android:id="@+id/pets"
+				android:layout_width="160dp"
+				android:layout_height="wrap_content"
+				android:layout_alignParentRight="true"
+				android:entries="@array/pets_array"
+				android:prompt="@string/array_prompt"
+				android:background="@null"
+				android:paddingLeft="5dp"
+				android:layout_centerVertical="true"  />		
+	</RelativeLayout> 
+	<RelativeLayout
+		android:layout_width="match_parent"
+		android:layout_height="50dp"
+		android:padding="2dp"
+		android:background="@color/profile_dark_gray">
+		<TextView 
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_alignParentLeft="true" 
+			android:text="@string/online_now"
+			android:layout_centerVertical="true"/>
+			
+		<TextView 
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_centerInParent="true"
+			android:text="@string/colon"
+			android:layout_centerVertical="true"/>
+		<CheckBox 
+		    android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_alignParentRight="true"
+			android:layout_centerVertical="true"
+			android:id="@+id/online"/>
+	</RelativeLayout> 
+	<RelativeLayout
+	    android:id="@+id/keywords_settings"
+		android:layout_width="match_parent"
+		android:layout_height="50dp"
+		android:padding="2dp"
+		android:background="@color/profile_dark_gray">
+		<TextView 
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_alignParentLeft="true" 
+			android:text="@string/keyword"
+			android:layout_centerVertical="true"/>
+			
+		<TextView
+		    android:id="@+id/keywords_settings_txt" 
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_centerInParent="true"
+			android:textColor="@color/red"
+			android:text="@string/double_hyphen"
+			android:layout_centerVertical="true"/>
+		<ImageButton 
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_alignParentRight="true"
+			android:layout_centerVertical="true"
+			android:id="@+id/keyword_settings"
+			android:background="@null"
+			android:src="@drawable/btnarrow"/>	
+	</RelativeLayout>   
+	
+	
+	
+</LinearLayout>
+
+				
+</ScrollView>
+
+</RelativeLayout>

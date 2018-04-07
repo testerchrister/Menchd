@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:weightSum="1"
+    android:baselineAligned="false" >
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight=".2" >
+        <ImageView 
+            android:id="@+id/location_image"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:layout_margin="5dp"
+            android:src="@drawable/dashhotspot"
+            android:contentDescription="@string/contentDescription"/>
+    </LinearLayout>
+	<LinearLayout 
+	    android:layout_width="0dp"
+	    android:layout_height="wrap_content"
+	    android:layout_weight=".8"
+	    android:layout_marginTop="5dp"
+	    android:orientation="vertical">
+	    <TextView 
+	        android:id="@+id/loc_title"
+	        android:layout_height="wrap_content"
+	        android:layout_width="match_parent"
+	        android:textStyle="bold"
+	        android:text="Real Arabia"/>
+	    <TextView 
+	        android:id="@+id/loc_details"
+	        android:layout_height="wrap_content"
+	        android:layout_width="match_parent"
+	        android:text="Janatha, Kaloor"/>
+	    <TextView 
+	        android:id="@+id/loc_distance"
+	        android:layout_height="wrap_content"
+	        android:layout_width="match_parent"
+	        android:text="1556 meters"/>
+	</LinearLayout>
+</LinearLayout>

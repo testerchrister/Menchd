@@ -1,0 +1,84 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black"
+    android:orientation="vertical"
+    tools:context=".RegistrationActivity" >
+
+        <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"     
+        android:background="@drawable/topnav"
+        android:orientation="horizontal"
+        android:padding="5dp">
+		<ImageButton
+             android:id="@+id/back_btn"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_alignParentLeft="true"
+             android:layout_centerVertical="true"
+             android:background="@null"
+             android:src="@drawable/buttonback" />
+        <TextView
+            android:id="@+id/tab_heading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_margin="5dp"
+            android:textSize="15sp"
+            android:text="@string/photo_manager"
+            android:textColor="@android:color/white" />
+                <ImageButton
+             android:id="@+id/save_btn"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_alignParentRight="true"
+             android:layout_centerVertical="true"
+             android:background="@null"
+             android:src="@drawable/btnsave" />
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" 
+	    android:paddingBottom="@dimen/activity_vertical_margin"
+	    android:paddingLeft="@dimen/activity_horizontal_margin"
+	    android:paddingRight="@dimen/activity_horizontal_margin"
+	    android:paddingTop="@dimen/activity_vertical_margin"
+	    android:gravity="center_horizontal"
+	    android:background="@drawable/loginbg"
+	    android:orientation="vertical">
+        <ImageView 
+            android:id="@+id/gallery_image"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:background="@drawable/userdefault"/>
+
+		<RelativeLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:padding="2dp"
+		android:layout_marginTop="15dp">
+		<TextView 
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:text="@string/description"/>
+	</RelativeLayout>  
+        <RelativeLayout 
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp">
+            <EditText 
+                android:id="@+id/caption"
+                android:layout_height="150dp"
+                android:layout_width="fill_parent"
+                android:layout_alignParentRight="true"
+                android:paddingLeft="5dp"
+                android:textSize="12sp"
+                android:lines="5"
+                android:background="@drawable/box_bg_inner"/>
+
+        </RelativeLayout>	                                     
+    </LinearLayout>
+
+</LinearLayout>

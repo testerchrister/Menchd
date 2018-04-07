@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:orientation="horizontal"
+    android:layout_margin="5dp"
+    android:padding="5dp"
+    android:baselineAligned="false"
+    android:background="@drawable/message_list_border"
+    android:weightSum="1"
+    android:id="@+id/single_message_item" >
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight=".2"
+        android:layout_marginLeft="5dp">
+
+     <ImageView
+         android:id="@+id/user_img"
+         android:layout_width="wrap_content"
+         android:layout_height="75dp"
+         android:background="@drawable/placeholder"
+         android:layout_gravity="center|center_vertical"
+         android:src="@drawable/addfav_gray" />
+       
+    </LinearLayout>
+
+    <LinearLayout 
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight=".8"
+        android:weightSum="1"
+        android:paddingLeft="3dp"
+        android:orientation="vertical">
+        <LinearLayout 
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight=".33"
+            android:orientation="horizontal"
+            android:weightSum="1">
+            <TextView 
+                android:id="@+id/user_name"
+                android:layout_width="0dp"
+                android:layout_weight=".5"
+                android:layout_height="fill_parent"
+                android:text="aasas"/>
+                <TextView 
+                android:id="@+id/view_chat"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="5dp"
+                android:paddingBottom="3dp"
+                android:textColor="@android:color/white"
+                android:textSize="8sp"
+                android:gravity="center"
+                android:background="@drawable/count" />
+            <TextView 
+                android:id="@+id/time_ago"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight=".4"
+                android:text="1 week ago"/>
+        </LinearLayout>
+        <LinearLayout 
+            android:layout_weight=".33"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp">
+            <TextView 
+                android:id="@+id/status_msg"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+        </LinearLayout>
+        <LinearLayout 
+            android:layout_weight=".33"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp">
+            <TextView 
+                android:id="@+id/last_msg_time"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="right"
+                />
+        </LinearLayout>        
+    </LinearLayout>
+
+</LinearLayout>

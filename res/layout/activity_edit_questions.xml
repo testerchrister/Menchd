@@ -1,0 +1,48 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".QuestionsTabActivity"
+    android:orientation="vertical"
+    android:background="@android:color/background_dark"  >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"        
+        android:background="@drawable/topnav"
+        android:orientation="horizontal"
+         >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/question_edit"
+            android:textColor="@android:color/white" />
+    </RelativeLayout>
+
+   <RelativeLayout 
+        android:id="@+id/questions_outer"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/loginbg">
+
+       <Button
+           	android:id="@+id/ask_question_btn"
+           	android:layout_width="wrap_content"
+           	android:layout_height="wrap_content"
+ 			android:layout_centerInParent="true"
+ 			android:layout_centerHorizontal="true"
+           	android:background="@drawable/btnsubmit"
+           	android:textColor="@android:color/white"
+           	android:text="Answer more questions"
+           	android:visibility="invisible" />
+
+	     <ListView
+		    android:id="@+id/list_view"
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content" >
+		</ListView>
+	</RelativeLayout>       
+</LinearLayout>

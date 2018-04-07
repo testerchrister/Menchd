@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    
+	<item
+        android:id="@+id/suggest_one"
+        android:title="Hey how is your day going?"/>	
+	<item
+        android:id="@+id/suggest_two"
+        android:title="Great smile!"/>
+	<item
+        android:id="@+id/suggest_three"
+        android:title="You're 150% my type!"/>
+	<item
+        android:id="@+id/suggest_four"
+        android:title="Is it acceptable to be drinking while I do this?"/>
+	<item
+        android:id="@+id/suggest_five"
+        android:title="You seem like you have a huge vocabulary"/>
+	<item
+        android:id="@+id/suggest_six"
+        android:title="Don't make me drink alone tonight."/>
+      
+</menu>

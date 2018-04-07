@@ -1,0 +1,200 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PhotoTabActivity"
+    android:orientation="vertical"
+    android:background="@android:color/black"
+    android:id="@+id/container" >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"      
+        android:background="@drawable/topnav"
+        android:orientation="horizontal"
+        android:padding="5dp" >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"       
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_gravity="center|center_horizontal"
+            android:text="@string/profile_photos"
+            android:textColor="@android:color/white" />
+         <TextView
+            android:id="@+id/prof_user_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_gravity="center|center_horizontal"
+            android:textColor="@android:color/white" />
+    </LinearLayout>
+        <ImageButton
+             android:id="@+id/edit_profile"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_alignParentRight="true"
+             android:layout_centerVertical="true"
+             android:background="@null"
+             android:src="@drawable/btnedit" />    
+    </RelativeLayout>
+    <LinearLayout 
+        android:id="@+id/photo_outer"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="1">
+        <LinearLayout 
+            android:id="@+id/face_outer"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:orientation="vertical"
+            android:layout_weight=".2">
+            <TextView 
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/photo_face"
+                android:background="@android:color/darker_gray"
+                android:paddingLeft="10dp"/>
+            <HorizontalScrollView 
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/face_scroll"
+                android:background="@android:color/white"
+                android:padding="2dp">
+				<LinearLayout
+				    android:layout_height="match_parent"
+				    android:layout_width="wrap_content"
+				    android:id="@+id/face_linear"
+				    android:orientation="horizontal" >
+				</LinearLayout>
+                
+
+            </HorizontalScrollView>
+            
+        </LinearLayout>
+        <LinearLayout 
+            android:id="@+id/body_outer"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:orientation="vertical"
+            android:layout_weight=".2">
+            <TextView 
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/photo_body"
+                android:background="@android:color/darker_gray"
+                android:paddingLeft="10dp"/>
+            <HorizontalScrollView 
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/body_scroll"
+                android:background="@android:color/white"
+                android:padding="2dp">
+
+                <LinearLayout
+				    android:layout_height="match_parent"
+				    android:layout_width="wrap_content"
+				    android:id="@+id/body_linear"
+				    android:orientation="horizontal" >
+				</LinearLayout>
+
+            </HorizontalScrollView>
+            
+        </LinearLayout>   
+        <LinearLayout 
+            android:id="@+id/action_outer"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:orientation="vertical"
+            android:layout_weight=".2">
+            <TextView 
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/photo_action"
+                android:background="@android:color/darker_gray"
+                android:paddingLeft="10dp"/>
+            <HorizontalScrollView 
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/action_scroll"
+                android:background="@android:color/white"
+                android:padding="2dp">
+
+                <LinearLayout
+				    android:layout_height="match_parent"
+				    android:layout_width="wrap_content"
+				    android:id="@+id/action_linear"
+				    android:orientation="horizontal" >
+				</LinearLayout>
+
+            </HorizontalScrollView>
+            
+        </LinearLayout>
+        <LinearLayout 
+            android:id="@+id/group_outer"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:orientation="vertical"
+            android:layout_weight=".2">
+            <TextView 
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/photo_group"
+                android:background="@android:color/darker_gray"
+                android:paddingLeft="10dp"/>
+            <HorizontalScrollView 
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/group_scroll"
+                android:background="@android:color/white"
+                android:padding="2dp">
+
+                <LinearLayout
+				    android:layout_height="match_parent"
+				    android:layout_width="wrap_content"
+				    android:id="@+id/group_linear"
+				    android:orientation="horizontal" >
+				</LinearLayout>
+
+            </HorizontalScrollView>
+            
+        </LinearLayout>
+         <LinearLayout 
+            android:id="@+id/group_outer"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:orientation="vertical"
+            android:layout_weight=".2">
+            <TextView 
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/photo_misc"
+                android:background="@android:color/darker_gray"
+                android:paddingLeft="10dp"/>
+            <HorizontalScrollView 
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/misc_scroll"
+                android:background="@android:color/white"
+                android:padding="2dp">
+
+                <LinearLayout
+				    android:layout_height="match_parent"
+				    android:layout_width="wrap_content"
+				    android:id="@+id/misc_linear"
+				    android:orientation="horizontal" >
+				</LinearLayout>
+
+            </HorizontalScrollView>
+        </LinearLayout>    
+        
+        
+    </LinearLayout>
+
+</LinearLayout>

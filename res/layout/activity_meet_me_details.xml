@@ -1,0 +1,178 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MeetMeDetailsActivity"
+    android:background="@android:color/background_dark" >
+<RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/topnav"
+        android:orientation="horizontal"
+        android:padding="5dp"
+        android:id="@+id/topnav" >
+        <ImageButton
+             android:id="@+id/clear_btn"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_alignParentLeft="true"
+             android:layout_centerVertical="true"
+             android:background="@null"
+             android:src="@drawable/buttonback"
+             android:contentDescription="@string/clear_btn" /> 
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"   
+            android:layout_centerInParent="true"         
+            android:text="@string/meet_me"
+            android:textColor="@android:color/white" />
+        <ImageButton
+             android:id="@+id/delete_meetme"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_alignParentRight="true"
+             android:layout_centerVertical="true"
+             android:background="@null"
+             android:src="@drawable/delete_btn"
+             android:contentDescription="@string/contentDescription"  />        
+    </RelativeLayout>
+            <LinearLayout
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:id="@+id/basics_layout"
+		android:background="@drawable/loginbg"
+		android:orientation="vertical"
+		android:layout_below="@+id/topnav">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+            <RelativeLayout
+                android:id="@+id/img_container" 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/open_user_image"
+            android:layout_width="85dp"
+            android:layout_height="85dp"
+            android:layout_margin="5dp"
+            android:padding="3dp"
+            android:src="@drawable/confirmthumb"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="74dp"
+        android:layout_alignBottom="@+id/img_container"
+        android:layout_toRightOf="@+id/img_container"
+        android:paddingLeft="5dp" >
+
+        <RelativeLayout
+            android:id="@+id/open_data"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp" >
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true" >
+
+                <TextView
+                    android:id="@+id/user_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Justin Bieber"
+                    android:textSize="14dp" />
+
+                <TextView
+                    android:id="@+id/age_city"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/user_name"
+                    android:layout_marginTop="2dp"
+                    android:text="17, Kakkanad"
+                    android:textSize="12dp"/>
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true" >
+            <ImageButton
+                android:id="@+id/message_meet"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:background="@null"
+                android:src="@drawable/btnmesg" />
+        </RelativeLayout>
+    </RelativeLayout>
+    
+   
+        
+    </RelativeLayout>
+    <ImageView 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/hline"
+        android:layout_marginTop="15dp"/>
+    
+    <LinearLayout 
+        android:id="@+id/meeting_details"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:orientation="horizontal"
+        android:weightSum="1">
+        <LinearLayout 
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".4"
+            android:orientation="vertical">
+            <TextView 
+                android:id="@+id/day_date"
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:text="MON JUNE 02"	/>
+            <TextView 
+                android:id="@+id/time"
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:text="06:30 PM"	/>
+        </LinearLayout>	
+        <LinearLayout 
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".6">
+            	<TextView
+            	    android:id="@+id/status_text" 
+            	    android:layout_width="fill_parent"
+            	    android:layout_height="fill_parent"
+            	    android:text="Kuttan Chettan's Tea shop"/>
+        </LinearLayout>
+    </LinearLayout>
+    <ImageView 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/hline"
+        android:layout_marginBottom="15dp"/>
+    
+    <RelativeLayout
+        android:id="@+id/map_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="5dp"
+        android:background="@android:color/background_dark" >
+        <fragment
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.MapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+	</RelativeLayout>
+   </LinearLayout>
+</RelativeLayout>

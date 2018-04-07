@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:baselineAligned="false"
+    android:weightSum="1"
+    android:id="@+id/fav_list_item" >
+    <LinearLayout 
+        android:id="@+id/img_container"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:layout_width="0dp"
+        android:layout_weight=".3">
+        <ImageView 
+            android:id="@+id/profile_img"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:src="@drawable/userdefault"/>
+    </LinearLayout>
+	<RelativeLayout 
+	    android:id="@+id/user_details"
+	    android:layout_width="0dp"
+	    android:layout_height="wrap_content"
+		android:layout_weight=".7">
+        	<RelativeLayout 
+        	    android:id="@+id/user_info_top"
+        	    android:layout_width="match_parent"
+        	    android:layout_height="wrap_content"
+        	    android:paddingTop="5dp">
+        	    <ImageView 
+	    	    android:id="@+id/online_status"
+	    	    android:layout_width="wrap_content"
+	    	    android:layout_height="wrap_content"
+	    	    android:src="@drawable/online"/>
+        	    <LinearLayout 
+        	        android:layout_width="fill_parent"
+        	        android:layout_height="wrap_content"
+        	        android:layout_toRightOf="@+id/online_status"
+        	        android:paddingLeft="5dp"
+        	        android:orientation="vertical">
+        	        <TextView 
+        	            android:id="@+id/user_name"
+        	            android:layout_width="wrap_content"
+        	            android:layout_height="wrap_content"
+        	            android:textStyle="bold"
+        	            android:text="Robin"/>
+        	        <TextView 
+        	            android:id="@+id/age_location"
+        	            android:layout_width="wrap_content"
+        	            android:layout_height="wrap_content"
+        	            android:text="29, Kochi"/>
+        	    </LinearLayout>
+        	</RelativeLayout>
+
+	    	<RelativeLayout
+	    	    android:layout_width="fill_parent"
+	    	    android:layout_height="wrap_content"
+	    	    android:layout_below="@+id/user_info_top" >
+
+	    	    <TextView 
+	    	        android:id="@+id/perc"
+	    	        android:layout_width="wrap_content"
+	    	        android:layout_height="wrap_content"
+	    	        android:textColor="@color/red"
+	    	        android:layout_alignParentLeft="true"
+	    	        android:text="42%"/>
+	    	    <ImageView 
+	    	        android:id="@+id/login_fav_stat"
+	    	        android:layout_width="wrap_content"
+	    	        android:layout_height="wrap_content"
+	    	        android:layout_alignParentRight="true"
+	    	        android:layout_marginRight="5dp"
+	    	        android:src="@drawable/addfav60"/>
+	    	    <ImageView 
+	    	        android:id="@+id/user_fav_stat"
+	    	        android:layout_width="wrap_content"
+	    	        android:layout_height="wrap_content"
+	    	        android:layout_toLeftOf="@+id/login_fav_stat"
+	    	        android:layout_marginRight="5dp"
+	    	        android:src="@drawable/addfav60"/>
+	    	</RelativeLayout>
+	    	
+	</RelativeLayout>
+</LinearLayout>

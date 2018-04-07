@@ -1,0 +1,77 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black"
+    tools:context=".GaydarActivity" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/topnav"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:id="@+id/topnav" >
+		<ImageButton 
+		    android:id="@+id/back_btn"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_alignParentLeft="true"
+		    android:layout_centerVertical="true"
+		    android:layout_marginLeft="5dp"
+		    android:src="@drawable/backbtn"
+		    android:background="@null"
+		    android:contentDescription="@string/contentDescription"/>
+        <TextView
+            android:id="@+id/tab_heading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+			android:layout_centerInParent="true"
+            android:layout_margin="5dp"
+            android:text="@string/gaydar"
+            android:textColor="@android:color/white"
+            android:textSize="15sp" />
+
+        <ImageButton
+            android:id="@+id/filter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:src="@drawable/filterbtn"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            android:visibility="invisible"
+            android:contentDescription="@string/filter_button" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/container"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/topnav"
+        android:background="@drawable/loginbg" >
+		<TabHost 
+		    android:id="@android:id/tabhost"
+		    android:layout_width="fill_parent"
+		    android:layout_height="fill_parent"
+		    android:background="@android:color/background_dark">        
+        <FrameLayout
+            android:id="@android:id/tabcontent"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@android:color/white"/>        
+         <HorizontalScrollView
+             android:layout_width="fill_parent"
+             android:layout_height="wrap_content">
+	     	<TabWidget
+	            android:id="@android:id/tabs"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:background="@drawable/tab_gray" />
+         </HorizontalScrollView> 
+	     </TabHost>        
+    </LinearLayout>
+
+</RelativeLayout>

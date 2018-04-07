@@ -1,0 +1,144 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@android:color/black"
+    tools:context=".ProfileHomeActivity" >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"      
+        android:background="@drawable/topnav"
+        android:orientation="horizontal"
+        android:padding="5dp" >
+	<LinearLayout 
+	    android:id="@+id/center_txt"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_centerInParent="true">
+	    <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="@string/profile_basics"          
+            android:textColor="@android:color/white" />
+         <TextView
+            android:id="@+id/prof_user_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:textColor="@android:color/white" />
+	</LinearLayout>
+
+         <ImageButton
+             android:id="@+id/edit_profile"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_alignParentRight="true"
+             android:layout_centerVertical="true"
+             android:background="@null"
+             android:src="@drawable/btnedit" />
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@drawable/preloader"
+        android:layout_weight=".9"
+        android:orientation="vertical" >
+        <ImageView 
+			    android:id="@+id/prof_img"
+			    android:layout_width="match_parent"
+			    android:layout_height="fill_parent"/>
+        <ImageView 
+            android:id="@+id/play_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/btnplay"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="5dp"/>
+        
+       
+    </RelativeLayout>
+		<TextView 
+            android:id="@+id/meetme_msg"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:background="@android:color/background_dark"
+            android:textColor="@android:color/white"
+            android:ellipsize="marquee"
+            android:scrollHorizontally="true"
+            android:singleLine="true"
+            android:marqueeRepeatLimit="marquee_forever"/>	
+        <LinearLayout 
+            android:layout_width="match_parent"
+        	android:layout_height="50dp"
+        	android:orientation="horizontal"
+        	android:background="@drawable/profilebg"
+        	android:paddingTop="5dp">
+        	
+            <LinearLayout
+            	android:layout_width="match_parent"
+        		android:layout_height="match_parent"
+        		android:orientation="vertical"
+        		android:paddingLeft="5dp"
+        		android:layout_weight=".5"
+        		 >
+        		 <ScrollView
+        		     android:layout_width="wrap_content"
+        		     android:layout_height="wrap_content" >
+        		    <TextView 
+                    android:id="@+id/first_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/first_name"/>
+        		</ScrollView>    
+        		<HorizontalScrollView
+        		     android:layout_width="wrap_content"
+        		     android:layout_height="wrap_content" >    
+                <TextView 
+                    android:id="@+id/age_location"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/age_location"/>
+        	
+				 </HorizontalScrollView>
+                
+            </LinearLayout>
+           
+            <LinearLayout 
+                android:layout_width="match_parent"
+        		android:layout_height="match_parent"
+        		android:orientation="horizontal"
+        		android:layout_weight=".5"
+        		>
+                 <TextView
+                    android:id="@+id/per"  
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".33"
+                    android:textColor="@color/red"
+                    android:paddingLeft="3dp"
+                    android:layout_gravity="center|center_vertical"/>
+                 <ImageView
+                     android:id="@+id/fav_status" 
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:layout_weight=".33"
+                     />
+                 <ImageView
+                     android:id="@+id/report_user" 
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:layout_weight=".33"
+                     />
+            </LinearLayout>
+        </LinearLayout>
+
+        
+ 
+
+</LinearLayout>

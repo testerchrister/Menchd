@@ -1,0 +1,45 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TermasAndConditionsActivity"
+    android:background="@android:color/background_dark" >
+<RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/topnav"
+        android:orientation="horizontal"
+        android:padding="5dp"
+        android:id="@+id/topnav" >
+        <ImageButton
+             android:id="@+id/clear_btn"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_alignParentLeft="true"
+             android:layout_centerVertical="true"
+             android:background="@null"
+             android:src="@drawable/buttonback"
+             android:contentDescription="@string/clear_btn" /> 
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"   
+            android:layout_centerInParent="true"         
+            android:text="@string/terms_and_conditions"
+            android:textColor="@android:color/white" />                
+    </RelativeLayout>
+    <LinearLayout
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:layout_below="@+id/topnav"
+		android:id="@+id/basics_layout"
+		android:background="@drawable/pattern"
+		android:orientation="vertical"
+		android:padding="5dp">
+        <WebView
+            android:id="@+id/web_view" 
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+        </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+		android:id="@+id/chat_wrapper"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1"  >
+
+        <ImageView 
+            android:id="@+id/receiver_img"
+            android:layout_height="50dp"
+            android:layout_width="0dp"
+            android:src="@drawable/btnaddfav_gray"
+            android:layout_weight=".15"
+            />
+        <LinearLayout 
+            android:id="@+id/chat_content"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight=".7"
+            android:orientation="vertical">
+            <RelativeLayout 
+                android:id="@+id/time_wrap"
+                android:layout_width="match_parent"
+                android:layout_height="15dp"
+                android:orientation="horizontal">
+
+                 <TextView
+                     android:id="@+id/sender_time"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:layout_alignParentRight="true"
+                     android:layout_alignParentTop="true"
+                     android:text="6 days ago"
+                     android:textColor="@color/red" />
+
+                 <ImageView
+                     android:id="@+id/sender_time_img"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:layout_alignParentBottom="true"
+                     android:layout_toLeftOf="@+id/sender_time"
+                     android:src="@drawable/chattomer" />
+
+                 <ImageView
+                     android:id="@+id/receiver_time_img"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:layout_alignParentLeft="true"
+                     android:layout_centerVertical="true"
+                     android:src="@drawable/chattimeb" />
+
+                 <TextView
+                     android:id="@+id/receiver_time"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:layout_alignParentTop="true"
+                     android:layout_toRightOf="@+id/receiver_time_img"
+                     android:text="6 days ago" />
+
+            </RelativeLayout>
+            <RelativeLayout 
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="horizontal"
+                android:weightSum="1">
+                <ImageView 
+                   android:id="@+id/receiver_chat_img"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:src="@drawable/pointerblack"
+                   android:layout_toLeftOf="@+id/chat_message"
+                   android:layout_marginTop="6dp" />
+                <TextView 
+                   android:id="@+id/chat_message"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:background="@drawable/chat_bubble"
+                   android:textColor="@android:color/white"
+                   android:padding="5dp"
+                   android:layout_marginTop="2dp"/>
+                <ImageView 
+                   android:id="@+id/sender_chat_img"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:src="@drawable/pointerred"
+                   android:layout_toRightOf="@+id/chat_message"
+                   android:layout_marginTop="6dp"/>
+            </RelativeLayout>
+                
+        </LinearLayout>
+         <ImageView 
+            android:id="@+id/sender_img"
+            android:layout_height="50dp"
+            android:layout_width="0dp"
+            android:layout_weight=".15"
+            android:src="@drawable/btnaddfav"
+            />
+    </LinearLayout>

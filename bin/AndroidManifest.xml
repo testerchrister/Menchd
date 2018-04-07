@@ -1,0 +1,364 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.newagesmb.version3"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <permission
+        android:name="com.newagesmb.version3.permission.MAPS_RECEIVE"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="com.newagesmb.version3.permission.MAPS_RECEIVE" />
+
+    <uses-sdk
+        android:minSdkVersion="11"
+        android:targetSdkVersion="19" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+
+    <!-- Required to show current location -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <!-- For Video Recording -->
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="true" />
+    
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+    
+    <!-- Required OpenGL ES 2.0. for Maps V2 -->
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true" />
+    <!-- Required for access phone contact -->
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+
+        <!-- Goolge Maps API Key -->
+        <meta-data
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value="AIzaSyC_MtjK-OSii-nqkMVF8IPu5jPePyXyUa0" />
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <uses-library android:name="com.google.android.maps" />
+
+        <activity
+            android:name="com.newagesmb.version3.MainActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.newagesmb.version3.LoginActivity"
+            android:label="@string/title_activity_login"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.newagesmb.version3.HomeActivity"
+            android:label="@string/title_activity_home"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.newagesmb.version3.ProfileActivity"
+            android:label="@string/title_activity_profile"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.newagesmb.version3.PhotoTabActivity"
+            android:label="@string/title_activity_photo_tab"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.newagesmb.version3.ProfileTabActivity"
+            android:label="@string/title_activity_profile_tab"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.newagesmb.version3.BasicProfActivity"
+            android:label="@string/title_activity_basic_prof"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.newagesmb.version3.MessageTabActivity"
+            android:label="@string/title_activity_message_tab"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.newagesmb.version3.QuestionsTabActivity"
+            android:label="@string/title_activity_questions_tab"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.newagesmb.version3.ProfileHomeActivity"
+            android:label="@string/title_activity_profile_home"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.newagesmb.version3.GallaryActivity"
+            android:label="@string/title_activity_gallary"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.newagesmb.version3.RoutingActivity"
+            android:label="@string/title_activity_routing" >
+        </activity>
+        <activity
+            android:name="com.newagesmb.version3.ForgotPasswordActivity"
+            android:label="@string/title_activity_forgot_password"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.newagesmb.version3.RegistrationActivity"
+            android:label="@string/title_activity_registration"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.newagesmb.version3.CitySearchActivity"
+            android:label="@string/title_activity_city_search"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.newagesmb.version3.IagreeActivity"
+            android:label="@string/title_activity_iagree"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.newagesmb.version3.TermsActivity"
+            android:label="@string/title_activity_terms"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.newagesmb.version3.AskQuestion"
+            android:label="@string/title_ask_question"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.newagesmb.version3.ProfileEditActivity"
+            android:label="@string/profile_edit"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.newagesmb.version3.EditDetailsActivity"
+            android:label="@string/profile_edit"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.newagesmb.version3.EditQuestionsActivity"
+            android:label="@string/question_edit"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.newagesmb.version3.EditBasicsActivity"
+            android:label="@string/basic_edit"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.newagesmb.version3.EditPhotosActivity"
+            android:label="@string/basic_edit"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.newagesmb.version3.ManagePhotoActivity"
+            android:label="@string/basic_edit"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.newagesmb.version3.ConversationActivity"
+            android:label="@string/title_activity_conversation"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.newagesmb.version3.MessageActivity"
+            android:label="@string/title_activity_conversation"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.newagesmb.version3.SharedLocationActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/title_activity_shared_location"
+            android:screenOrientation="portrait"
+            android:theme="@style/FullscreenTheme" >
+        </activity>
+        <activity
+            android:name="com.newagesmb.version3.GoogleMapActivity"
+            android:label="@string/title_activity_google_map"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.newagesmb.version3.GaydarActivity"
+            android:label="@string/title_activity_gaydar"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.newagesmb.version3.GaydarNearByActivity"
+            android:label="@string/title_activity_gaydar_near_by"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.newagesmb.version3.FilterActivity"
+            android:label="@string/title_activity_filter"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.newagesmb.version3.GaydarAgeSettingsActivity"
+            android:label="@string/title_activity_gaydar_age_settings"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.newagesmb.version3.GaydarHeightSettingsActivity"
+            android:label="@string/title_activity_gaydar_height_settings"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.newagesmb.version3.GaydarWeightSettingsActivity"
+            android:label="@string/title_activity_gaydar_weight_settings"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.newagesmb.version3.GaydarLocationSettingsActivity"
+            android:label="@string/title_activity_gaydar_location_settings"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.newagesmb.version3.GaydarKeywordSettingsActivity"
+            android:label="@string/title_activity_gaydar_keyword_settings"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.newagesmb.version3.MeetMeActivity"
+            android:label="@string/title_activity_meet_me"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.newagesmb.version3.MeetMeOpenDateActivity"
+            android:label="@string/title_activity_meet_me_open_date"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.newagesmb.version3.MeetMeMyDateActivity"
+            android:label="@string/title_activity_meet_me_my_date"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.newagesmb.version3.MeetMeDetailsActivity"
+            android:label="@string/title_activity_meet_me_details"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.newagesmb.version3.MeetMeSelectUsersActivity"
+            android:label="@string/title_activity_meet_me_select_users"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.newagesmb.version3.FoursquareLocationActivity"
+            android:label="@string/title_activity_foursquare_location"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.newagesmb.version3.HotSpotsActivity"
+            android:label="@string/title_activity_hot_spots"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.newagesmb.version3.FavoritesActivity"
+            android:label="@string/title_activity_favorites"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.newagesmb.version3.FoursquareLocationDetailsActivity"
+            android:label="@string/title_activity_foursquare_location_details"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.newagesmb.version3.SettingsActivity"
+            android:label="@string/title_activity_settings"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.newagesmb.version3.PrivacyPolicyActivity"
+            android:label="@string/title_activity_privacy_policy"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.newagesmb.version3.TermsAndConditionsActivity"
+            android:label="@string/title_activity_termas_and_conditions"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.newagesmb.version3.RecommendationSettngsActivity"
+            android:label="@string/title_activity_recommendation_settngs"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.newagesmb.version3.ChangePasswordActivity"
+            android:label="@string/title_activity_change_password"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.newagesmb.version3.BlockedUsersActivity"
+            android:label="@string/title_activity_blocked_users"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.newagesmb.version3.TellYourFriendActivity"
+            android:label="@string/title_activity_tell_your_friend"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.newagesmb.version3.EventActivity"
+            android:label="@string/title_activity_event"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.newagesmb.version3.EventsDayActivity"
+            android:label="@string/title_activity_events_day"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.newagesmb.version3.EventDetailsActivity"
+            android:label="@string/title_activity_event_details"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.newagesmb.version3.HomeGridActivity"
+            android:label="@string/title_activity_home_grid"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.newagesmb.version3.VideoPlayActivity"
+            android:label="@string/title_activity_video_play"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.newagesmb.version3.VideoUploadActivity"
+            android:label="@string/title_activity_video_upload" >
+        </activity>
+        <receiver 
+            android:name="com.newagesmb.version3.GcmBroadcastReceiver"
+            android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+                <action android:name="com.google.android.c2dm.intent.REGISTRATION" />
+                <category  android:name="com.newagesmb.version3"/>
+            </intent-filter>
+        </receiver>
+        <service android:name="com.newagesmb.version3.GCMNotificationIntentService" />
+    </application>
+
+</manifest>

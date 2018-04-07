@@ -1,0 +1,43 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/background_dark">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"        
+        android:background="@drawable/topnav"
+        android:orientation="horizontal"
+        android:layout_alignParentTop="true"
+        android:id="@+id/topnav">
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_gravity="center|center_horizontal"
+            android:text="@string/user_agreement"
+            android:textColor="@android:color/white" />
+    </LinearLayout>
+
+    <WebView
+        android:id="@+id/web_view"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/topnav"
+        android:layout_above="@+id/iagree_btn" />
+
+    <Button
+        android:id="@+id/iagree_btn" 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/btnsubmit"
+        android:text="@string/i_agree"
+        android:textColor="@android:color/white"
+        android:layout_margin="5dp"
+        android:layout_alignParentBottom="true"/>
+</RelativeLayout>

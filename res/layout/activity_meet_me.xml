@@ -1,0 +1,74 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MeetMeActivity"
+    android:background="@android:color/background_dark"
+    android:id="@+id/main" >
+<RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/topnav"
+        android:orientation="horizontal"
+        android:padding="5dp"
+        android:id="@+id/topnav" >
+        <ImageButton
+             android:id="@+id/clear_btn"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_alignParentLeft="true"
+             android:layout_centerVertical="true"
+             android:background="@null"
+             android:src="@drawable/buttonback"
+             android:contentDescription="@string/clear_btn" /> 
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"   
+            android:layout_centerInParent="true"         
+            android:text="@string/meet_me"
+            android:textColor="@android:color/white" />
+        <ImageButton
+             android:id="@+id/add_meetme"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_alignParentRight="true"
+             android:layout_centerVertical="true"
+             android:background="@null"
+             android:src="@drawable/btnaddstatus"
+             android:contentDescription="@string/add_meet"  />        
+    </RelativeLayout>
+        <LinearLayout
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:id="@+id/basics_layout"
+		android:background="@drawable/loginbg"
+		android:orientation="vertical"
+		android:layout_below="@+id/topnav">
+        <TabHost 
+		    android:id="@android:id/tabhost"
+		    android:layout_width="fill_parent"
+		    android:layout_height="fill_parent"	
+		    android:background="@android:color/background_dark">   
+		    <FrameLayout
+            android:id="@android:id/tabcontent"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@android:color/white"
+            android:layout_marginTop="50dp"/>             
+         <HorizontalScrollView
+             android:layout_width="fill_parent"
+             android:layout_height="wrap_content"
+             android:fillViewport="true">
+	     	<TabWidget
+	            android:id="@android:id/tabs"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:background="@drawable/tab_gray"/>
+         </HorizontalScrollView> 
+                 
+	     </TabHost>   
+        </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,725 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Mench\'d</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_login">Login</string>
+    <string name="logo">Mench\'d</string>
+    <string name="user_name">User Name</string>
+    <string name="prompt_email">Email ID</string>
+    <string name="password">Password</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in_short">Password Action</string>
+    <string name="action_sign_in">LOGIN</string>
+    <string name="forget_password">Password ?</string>
+    <string name="sepline">OR</string>
+    <string name="action_register">Register</string>
+    <string name="title_activity_home">HomeActivity</string>
+    <string name="google_address_lookup">http://maps.googleapis.com/maps/api/geocode/json?sensor=true</string>
+
+    <!-- <string name="base_url">http://www.menchd.com/</string> -->
+
+    <string name="json_url">http://www.menchd.com/client</string>
+    <string name="register_url">http://www.menchd.com/register</string>
+    <string name="update_profile_url">http://www.menchd.com/update_profile</string>
+    <string name="update_other_image_url">http://www.menchd.com/other_images</string>
+    <string name="send_message_url">http://www.menchd.com/client/send_message2</string>
+	<string name="video_upload_url">http://menchd.com/cloudfiles/uploadVideoFile</string>
+	<string name="video_delete_url">http://menchd.com/cloudfiles/deleteProfileVideo</string>
+    <!--
+    <string name="json_url">http://192.168.1.254/menchd/client/</string>
+    <string name="register_url">http://192.168.1.254/menchd/register</string>
+    <string name="update_profile_url">http://192.168.1.254/menchd/update_profile</string>
+    <string name="update_other_image_url">http://192.168.1.254/menchd/other_images</string>
+    <string name="send_message_url">http://192.168.1.254/menchd/client/send_message2</string>    -->
+	<string name="number">5</string>
+    <string name="forsquare_client_id">HF3TO1LVC1PPQQG1E1CCEYKVS5JBKCZ02OGKWBCOTSW4YIF0</string>
+    <string name="forsquare_client_secret">UB4STITEWGEVULMO44FEXWLESRNG3FNEZ1E0MK55PUSABMHH</string>
+    <string name="forsquare_url">https://api.foursquare.com/v2/venues/search?</string>
+    <string name="foursquare_location_url">https://foursquare.com/v/</string>
+    <string name="GPSAlertDialogTitle">GSP Settings</string>
+    <string name="GPSAlertDialogMessage">Enable GSP?</string>
+    <string name="settings">Yes</string>
+    <string name="cancel">Cancel</string>
+    <string name="recommandation">RECOMMENDATIONS</string>
+    <string name="log_out">Log Out</string>
+    <string name="hello_profile">Welcome to profile window</string>
+    <string name="title_activity_profile">ProfileActivity</string>
+    <string name="first_name">User Name</string>
+    <string name="age_location">Age, City</string>
+    <string name="percentage">00%</string>
+    <string name="basics_btn">BASICS</string>
+    <string name="about_btn">ABOUT</string>
+    <string name="photos_btn">PHOTOS</string>
+    <string name="message">MESSAGES</string>
+    <string name="question_btn">QUESTIONS</string>
+
+    <color name="red">#FF0000</color>
+    <color name="chat_popup_red">#d30202</color>
+    <color name="chat_popup_gray">#454546</color>
+    <color name="msg_red">#fff4f5</color>
+    <color name="msg_gray">#f2f1f1</color>
+    <color name="profile_dark_gray">#e8e7e7</color>
+    <color name="profile_light_gray">#fbfbfb</color>
+    <color name="chat_popup_dark_green">#1D8E36</color>
+
+    <string name="horoscope">Horoscope</string>
+    <string name="religion">Religion</string>
+    <string name="home_town">Home Town</string>
+    <string name="current_city">Current City</string>
+    <string name="college_univercity">College/University</string>
+    <string name="college">College</string>
+    <string name="career_field">Career Field</string>
+    <string name="basics_txt">Not yet added</string>
+    <string name="languages">Languages</string>
+    <string name="term">Term</string>
+    <string name="income">Income</string>
+    <string name="height">Height</string>
+    <string name="weight">Weight</string>
+    <string name="eye_color">Eye Color</string>
+    <string name="hair_color">Hair Color</string>
+    <string name="body_type">Body Type</string>
+    <string name="ethnicity">Ethnicity</string>
+    <string name="location">Location</string>
+    <string name="smoke">Smoke</string>
+    <string name="drink">Drink</string>
+    <string name="weed">Weed</string>
+    <string name="drug">Drug</string>
+    <string name="diet">Diet</string>
+    <string name="sex">Sex</string>
+    <string name="position">Position</string>
+    <string name="pets">Pets</string>
+    <string name="kids_question">Do you have kids ?</string>
+    <string name="want_kids">Do you want kids ?</string>
+    <string name="title_activity_pro_tab">ProTabActivity</string>
+    <string name="title_activity_prof_tab">ProfTabActivity</string>
+    <string name="title_activity_photo_tab">PhotoTabActivity</string>
+    <string name="photo_tab">Photo Activity</string>
+    <string name="message_tab">Message Activity</string>
+    <string name="questions_tab">Questions Activity</string>
+    <string name="title_activity_profile_tab">ProfileTabActivity</string>
+    <string name="profile">PROFILE</string>
+    <string name="title_activity_basic_prof">BasicProfActivity</string>
+    <string name="title_activity_message_tab">MessageTabActivity</string>
+    <string name="title_activity_questions_tab">QuestionsTabActivity</string>
+    <string name="title_activity_test">TestActivity</string>
+    <string name="title_activity_profile_home">ProfileHomeActivity</string>
+    <string name="profile_edit">EDIT PROFILE</string>
+    <string name="details_edit">EDIT DETAILS</string>
+    <string name="question_edit">EDIT QUESTIONS</string>
+    <string name="basic_edit">EDIT BASIC</string>
+    <string name="photo_edit">EDIT PHOTO</string>
+    <string name="profile_basics">BASICS -</string>
+    <string name="profile_details">DETAILS -</string>
+    <string name="profile_message">MESSAGES -</string>
+    <string name="profile_photos">PHOTOS -</string>
+    <string name="profile_questions">QUESTIONS -</string>
+    <string name="profile_">PROFILE - </string>
+    <string name="logo_tag">Logo Tag Line</string>
+    <string name="my_profile">My Profile</string>
+    <string name="photo_face">Face</string>
+    <string name="photo_body">Body</string>
+    <string name="photo_misc">Misc</string>
+    <string name="photo_group">Group Shot</string>
+    <string name="photo_action">Action</string>
+    <string name="him">Him: </string>
+    <string name="you">You: </string>
+    <string name="conversation">CONVERSATION</string>
+    <string name="title_activity_conversation">ConversationActivity</string>
+    <string name="duration">Duration</string>
+    <string name="description_zoom_touch_close">Image Zoom Close</string>
+    <string name="title_activity_gallary">GallaryActivity</string>
+    <string name="title_activity_routing">RoutingActivity</string>
+    <string name="title_activity_forgot_password">ForgotPasswordActivity</string>
+    <string name="forgot_password">FORGOT PASSWORD</string>
+    <string name="forgot_instruction">Submit your registered email ID</string>
+    <string name="submit">SUBMIT</string>
+    <string name="your_email">Your Email</string>
+    <string name="title_activity_registration">RegistrationActivity</string>
+    <string name="registration">REGISTRATION</string>
+    <string name="name">NAME</string>
+    <string name="password_cap">PASSWORD</string>
+    <string name="dob">DOB</string>
+    <string name="city">CITY</string>
+    <string name="email">EMAIL</string>
+    <string name="register">REGISTER</string>
+    <string name="cancel_cap">Cancel</string>
+    <string name="title_activity_city_search">CitySearchActivity</string>
+    <string name="location_settings">Location Settings</string>
+    <string name="current_location">Use your current location</string>
+    <string name="custom_city_search">Search you city</string>
+    <string name="search">Search</string>
+    <string name="title_activity_iagree">IagreeActivity</string>
+    <string name="user_agreement">User Agreement</string>
+    <string name="title_activity_terms">Terms Activity</string>
+    <string name="title_ask_question">Ask Question Activity</string>
+    <string name="i_agree">I Agree</string>
+    <string name="edit_picture">&#160;Edit Picture</string>
+    <string name="add_video">&#160;Add Video</string>
+    <string name="add_photos">Add Photos</string>
+    <string name="university_prompt">Select University/College</string>
+
+    <string-array name="university_array">
+        <item>SELECT</item>
+        <item>Academy of Art University (CA)</item>
+        <item>Albright College</item>
+        <item>American University</item>
+        <item>Arizona State University</item>
+        <item>Art Institute of Fort Lauderdale</item>
+        <item>Art Institute of Pittsburgh</item>
+        <item>Art Institute of Portland</item>
+        <item>Art Institute of Washington</item>
+        <item>Auburn University</item>
+        <item>Azusa Pacific University</item>
+        <item>Ball State University</item>
+        <item>Baruch College</item>
+        <item>Bates College</item>
+        <item>Belmont University</item>
+        <item>Bentley University</item>
+        <item>Berklee College of Music</item>
+        <item>Binghamton University</item>
+        <item>Boise State University</item>
+        <item>Boston College</item>
+        <item>Boston University</item>
+        <item>Bowie State University</item>
+        <item>Brandeis University</item>
+        <item>Brown University</item>
+        <item>Bucknell University</item>
+        <item>Buffalo State College</item>
+        <item>California Polytechnic State University - Pomona</item>
+        <item>California Polytechnic State University - San Luis Obispo</item>
+        <item>California State University - Fullerton</item>
+        <item>California State University - Long Beach</item>
+        <item>California State University - Northridge</item>
+        <item>Carleton College</item>
+        <item>Carnegie Mellon University</item>
+        <item>Champlain College</item>
+        <item>Chapman University</item>
+        <item>Christopher Newport University</item>
+        <item>City College of New York</item>
+        <item>Claremont McKenna College</item>
+        <item>Clark Atlanta University</item>
+        <item>Clemson University</item>
+        <item>Colby College</item>
+        <item>Colgate University</item>
+        <item>College of Charleston</item>
+        <item>College of DuPage</item>
+        <item>College of the Holy Cross</item>
+        <item>Colorado State University</item>
+        <item>Columbia College Chicago</item>
+        <item>Columbia University</item>
+        <item>Connecticut College</item>
+        <item>Cornell University</item>
+        <item>Culver-Stockton College</item>
+        <item>Dalhousie University (Canada)</item>
+        <item>Dartmouth College</item>
+        <item>Denison University</item>
+        <item>DePaul University</item>
+        <item>Dickinson College</item>
+        <item>Drake University</item>
+        <item>Drexel University</item>
+        <item>Duke University</item>
+        <item>East Carolina University</item>
+        <item>Eastern Connecticut State University</item>
+        <item>Eastern Washington University</item>
+        <item>Elon University</item>
+        <item>Emerson College</item>
+        <item>Emory University</item>
+        <item>Fairfield University</item>
+        <item>Fashion Institute of Technology (FIT)</item>
+        <item>FIDM</item>
+        <item>FIT</item>
+        <item>Flagler College</item>
+        <item>Florida A&amp;amp;M University</item>
+        <item>Florida International University</item>
+        <item>Florida State University</item>
+        <item>Fordham University</item>
+        <item>Franklin and Marshall College</item>
+        <item>Geneseo State University</item>
+        <item>George Brown College</item>
+        <item>George Mason University</item>
+        <item>George Washington University</item>
+        <item>Georgetown University</item>
+        <item>Georgia Southern University</item>
+        <item>Georgia State University</item>
+        <item>Gettysburg College</item>
+        <item>Gonzaga University</item>
+        <item>Hampton University</item>
+        <item>Hartwick College</item>
+        <item>Harvard University</item>
+        <item>High Point University</item>
+        <item>Hofstra University</item>
+        <item>Howard University</item>
+        <item>Humber College (Canada)</item>
+        <item>Hunter College</item>
+        <item>Illinois State University</item>
+        <item>Illinois Wesleyan University</item>
+        <item>Indiana State University</item>
+        <item>Indiana University</item>
+        <item>Iowa State University</item>
+        <item>Ithaca College</item>
+        <item>James Madison University</item>
+        <item>Johns Hopkins University</item>
+        <item>Kansas State University</item>
+        <item>Kent State University</item>
+        <item>La Salle University</item>
+        <item>Lafayette College</item>
+        <item>Lasell College</item>
+        <item>Lehigh University</item>
+        <item>LIM College</item>
+        <item>Lipscomb University</item>
+        <item>Louisiana State University</item>
+        <item>Loyola Marymount University</item>
+        <item>Loyola University Chicago</item>
+        <item>Loyola University Maryland</item>
+        <item>Manhattan College</item>
+        <item>Manhattan School of Music</item>
+        <item>Marist College</item>
+        <item>Marquette University</item>
+        <item>Maryville College</item>
+        <item>McGill University (Canada)</item>
+        <item>McMaster University (Canada)</item>
+        <item>Memorial University of Newfoundland</item>
+        <item>Messiah College</item>
+        <item>Miami International University of Art &amp;amp; Design</item>
+        <item>Miami University (Ohio)</item>
+        <item>Michigan State University</item>
+        <item>Middle Tennessee State University</item>
+        <item>Minnesota State University</item>
+        <item>Misericordia University</item>
+        <item>Missouri State University</item>
+        <item>Montclair State University</item>
+        <item>Moore College of Art &amp; Design</item>
+        <item>Morehouse College</item>
+        <item>Mount St. Mary\'s University</item>
+        <item>New England College</item>
+        <item>New Mexico State University</item>
+        <item>New York University</item>
+        <item>North Carolina A&amp;T State University</item>
+        <item>North Carolina State University</item>
+        <item>Northeastern University</item>
+        <item>Northern Arizona University</item>
+        <item>Northern Illinois University</item>
+        <item>Northern Michigan University</item>
+        <item>Northwestern University</item>
+        <item>Oakland University</item>
+        <item>Ohio State University</item>
+        <item>Ohio University</item>
+        <item>Old Dominion University</item>
+        <item>Oregon State University</item>
+        <item>Pace University</item>
+        <item>Parsons New School for Design</item>
+        <item>Penn State University</item>
+        <item>Pepperdine University</item>
+        <item>Philadelphia University</item>
+        <item>Pitzer College</item>
+        <item>Pomona College</item>
+        <item>Prairie View A&amp;M University</item>
+        <item>Providence College</item>
+        <item>Purdue University</item>
+        <item>Queens University (Canada)</item>
+        <item>Radford University</item>
+        <item>Rhode Island School of Design</item>
+        <item>RISD</item>
+        <item>Roanoke College</item>
+        <item>Rochester Institute of Technology</item>
+        <item>Rutgers University</item>
+        <item>Ryerson University (Canada)</item>
+        <item>Sacred Heart University</item>
+        <item>Saint Anselm College</item>
+        <item>Saint Joseph\'s University</item>
+        <item>Saint Mary\'s College - Notre Dame</item>
+        <item>Saint Vincent College</item>
+        <item>Salve Regina University</item>
+        <item>San Diego Miramar College</item>
+        <item>San Diego State University</item>
+        <item>San Francisco State University</item>
+        <item>Santa Clara University</item>
+        <item>SCAD</item>
+        <item>Seattle Pacific University</item>
+        <item>Seattle University</item>
+        <item>Smith College</item>
+        <item>South Texas College</item>
+        <item>Southern Methodist University</item>
+        <item>Spelman College</item>
+        <item>St. Edward\'s University</item>
+        <item>St. John\'s University</item>
+        <item>St. Olaf College</item>
+        <item>Stonehill College</item>
+        <item>Stony Brook University</item>
+        <item>Suffolk University</item>
+        <item>SUNY Oneonta</item>
+        <item>Syracuse University</item>
+        <item>Temple University</item>
+        <item>Texas A&amp;M University</item>
+        <item>Texas Christian University</item>
+        <item>Texas State University</item>
+        <item>Texas Tech University</item>
+        <item>The Art Institute of Portland</item>
+        <item>The College of New Jersey</item>
+        <item>The College of Saint Rose</item>
+        <item>The Illinois Institute of Art-Chicago</item>
+        <item>Towson University</item>
+        <item>Trinity College</item>
+        <item>Tufts University</item>
+        <item>Tulane University</item>
+        <item>Union College</item>
+        <item>University at Albany</item>
+        <item>University of Alabama</item>
+        <item>University of Alberta (Canada)</item>
+        <item>University of Arizona</item>
+        <item>University of Arkansas</item>
+        <item>University of Bridgeport</item>
+        <item>University of British Columbia (Canada)</item>
+        <item>University of California - Berkeley</item>
+        <item>University of California - Irvine</item>
+        <item>University of California - Los Angeles</item>
+        <item>University of California - San Diego</item>
+        <item>University of California - Santa Barbara</item>
+        <item>University of California - Santa Cruz</item>
+        <item>University of California- Davis</item>
+        <item>University of California-Riverside</item>
+        <item>University of Central Florida</item>
+        <item>University of Chicago</item>
+        <item>University of Cincinnati</item>
+        <item>University of Colorado</item>
+        <item>University of Connecticut</item>
+        <item>University of Dayton</item>
+        <item>University of Delaware</item>
+        <item>University of Denver</item>
+        <item>University of Florida</item>
+        <item>University of Georgia</item>
+        <item>University of Hawaii</item>
+        <item>University of Houston</item>
+        <item>University of Idaho</item>
+        <item>University of Illinois</item>
+        <item>University of Iowa</item>
+        <item>University of Kansas</item>
+        <item>University of Kentucky</item>
+        <item>University of Louisiana</item>
+        <item>University of Mary Washington</item>
+        <item>University of Maryland</item>
+        <item>University of Massachusetts</item>
+        <item>University of Miami</item>
+        <item>University of Michigan</item>
+        <item>University of Minnesota</item>
+        <item>University of Mississippi</item>
+        <item>University of Missouri - Columbia</item>
+        <item>University of Nebraska</item>
+        <item>University of Nevada</item>
+        <item>University of New Hampshire</item>
+        <item>University of North Carolina</item>
+        <item>University of North Florida</item>
+        <item>University of Notre Dame</item>
+        <item>University of Oklahoma</item>
+        <item>University of Oregon</item>
+        <item>University of Pennsylvania</item>
+        <item>University of Pittsburgh</item>
+        <item>University of Portland</item>
+        <item>University of Puget Sound</item>
+        <item>University of Rhode Island</item>
+        <item>University of Richmond</item>
+        <item>University of San Diego</item>
+        <item>University of San Francisco</item>
+        <item>University of South Carolina</item>
+        <item>University of Southern California</item>
+        <item>University of St Thomas</item>
+        <item>University of Tampa</item>
+        <item>University of Tennessee</item>
+        <item>University of Texas</item>
+        <item>University of Texas - Pan American</item>
+        <item>University of Toronto (Canada)</item>
+        <item>University of Utah</item>
+        <item>University of Vermont</item>
+        <item>University of Virginia</item>
+        <item>University of Washington</item>
+        <item>University of Waterloo (Canada)</item>
+        <item>University of Western Ontario (Canada)</item>
+        <item>University of Windsor</item>
+        <item>University of Wisconsin</item>
+        <item>Valdosta State University</item>
+        <item>Vanderbilt University</item>
+        <item>Vassar College</item>
+        <item>Villanova University</item>
+        <item>Virginia Commonwealth University</item>
+        <item>Virginia Tech</item>
+        <item>Wake Forest University</item>
+        <item>Washington State University</item>
+        <item>Washington University-St Louis</item>
+        <item>Webster University</item>
+        <item>Wellesley College</item>
+        <item>Wesleyan University</item>
+        <item>West Virginia University</item>
+        <item>Western Illinois University</item>
+        <item>Western Kentucky University</item>
+        <item>Western Washington University</item>
+        <item>Westminster College</item>
+        <item>Wheaton College</item>
+        <item>Whittier College</item>
+        <item>Wilfrid Laurier University (Canada)</item>
+        <item>Wofford College</item>
+        <item>Woodbury University</item>
+        <item>Yale University</item>
+        <item>Other</item>
+    </string-array>
+    <string-array name="horoscop_array">
+        <item>SELECT</item>
+        <item>Aries</item>
+        <item>Taurus</item>
+        <item>Gemini</item>
+        <item>Cancer</item>
+        <item>Leo</item>
+        <item>Virgo</item>
+        <item>Libra</item>
+        <item>Scorpio</item>
+        <item>Sagittarius</item>
+        <item>Capricorn</item>
+        <item>Aquarius</item>
+        <item>Pisces</item>
+    </string-array>
+    <string-array name="term_array">
+        <item>SELECT</item>
+        <item>LTR</item>
+        <item>STR</item>
+        <item>Friendship</item>
+        <item>Open Relationship</item>
+    </string-array>
+    <string-array name="income_array ">
+        <item>SELECT</item>
+        <item>Less than $25000</item>
+        <item>$25001-$50000</item>
+        <item>$50001-$100000</item>
+        <item>$100001-$150000</item>
+        <item>$150001-$200000</item>
+        <item>More than $200000</item>
+    </string-array>
+    <string-array name="smoke_array">
+        <item>SELECT</item>
+        <item>When I\'m drinking</item>
+        <item>A pack a day</item>
+        <item>I\'m giving it up</item>
+        <item>No</item>
+    </string-array>
+    <string-array name="drink_array">
+        <item>SELECT</item>
+        <item>No</item>
+        <item>Once in a while</item>
+        <item>Socially</item>
+        <item>Wino</item>
+    </string-array>
+    <string-array name="weed_array">
+        <item>SELECT</item>
+        <item>Never</item>
+        <item>A hit a day</item>
+        <item>When I was younger</item>
+        <item>Socially</item>
+    </string-array>
+    <string-array name="drug_drray">
+        <item>SELECT</item>
+        <item>No</item>
+        <item>Yes</item>
+        <item>On occasion</item>
+        <item>I\'ve never experimented with Drugs</item>
+    </string-array>
+    <string-array name="diet_array">
+        <item>SELECT</item>
+        <item>Vegan</item>
+        <item>Vegetarian</item>
+        <item>Paleo</item>
+        <item>Pescetarian</item>
+        <item>Some meat</item>
+        <item>Meat lover</item>
+        <item>Other</item>
+        <item>Clear</item>
+    </string-array>
+    <string-array name="sex_array">
+        <item>SELECT</item>
+        <item>Daily</item>
+        <item>I\'m a Virgin</item>
+        <item>When im in the mood</item>
+    </string-array>
+    <string-array name="position_array">
+        <item>SELECT</item>
+        <item>Top</item>
+        <item>Bottom</item>
+        <item>Versatile</item>
+    </string-array>
+    <string-array name="havekids_array">
+        <item>SELECT</item>
+        <item>Yes</item>
+        <item>No</item>
+    </string-array>
+    <string-array name="wantKids_array">
+        <item>SELECT</item>
+        <item>Yes</item>
+        <item>No</item>
+        <item>May Be</item>
+    </string-array>
+    <string-array name="body_array">
+        <item>SELECT</item>
+        <item>Slim</item>
+        <item>Slender</item>
+        <item>Twink</item>
+        <item>Bear</item>
+        <item>Chub</item>
+        <item>Gym Bunny</item>
+        <item>Gym Rat</item>
+        <item>Daddy muscle pup</item>
+        <item>Muscle Bear</item>
+        <item>Athletic</item>
+        <item>Average</item>
+        <item>Jacked</item>
+        <item>Otter</item>
+    </string-array>
+    <string-array name="ethni_array">
+        <item>SELECT</item>
+        <item>Asian</item>
+        <item>Middle Eastern</item>
+        <item>Black</item>
+        <item>Native American</item>
+        <item>Indian</item>
+        <item>Pacific Islander</item>
+        <item>Hispanic/Latino</item>
+        <item>White</item>
+        <item>Other</item>
+    </string-array>
+    <string-array name="pets_array">
+        <item>SELECT</item>
+        <item>Pet Friendly</item>
+        <item>It depends</item>
+        <item>I\'m allergic</item>
+        <item>I\'m a Dog guy</item>
+    </string-array>
+    <string-array name="height_ft_array">
+        <item>SELECT</item>
+        <item>1<superscript>ft</superscript></item>
+        <item>2<superscript>ft</superscript></item>
+        <item>3<superscript>ft</superscript></item>
+        <item>4<superscript>ft</superscript></item>
+        <item>5<superscript>ft</superscript></item>
+        <item>6<superscript>ft</superscript></item>
+        <item>7<superscript>ft</superscript></item>
+        <item>8<superscript>ft</superscript></item>
+        <item>9<superscript>ft</superscript></item>
+    </string-array>
+    <string-array name="height_in_array">
+        <item>SELECT</item>
+        <item>1<superscript>in</superscript></item>
+        <item>2<superscript>in</superscript></item>
+        <item>3<superscript>in</superscript></item>
+        <item>4<superscript>in</superscript></item>
+        <item>5<superscript>in</superscript></item>
+        <item>6<superscript>in</superscript></item>
+        <item>7<superscript>in</superscript></item>
+        <item>8<superscript>in</superscript></item>
+        <item>9<superscript>in</superscript></item>
+        <item>10<superscript>in</superscript></item>
+        <item>11<superscript>in</superscript></item>
+    </string-array>
+
+    <string name="array_prompt">SELECT</string>
+    <string name="description">Description</string>
+    <string name="photo_manager">Photo Manager</string>
+    <string name="title_activity_test1">Test1Activity</string>
+    <string name="title_activity_test2">Test2Activity</string>
+    <string name="delete_photo">Delete</string>
+    <string name="edit_caption">Edit Caption</string>
+    <string name="menu_settings">Settings</string>
+    <string name="ok_button">OK</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="title_activity_shared_location">SharedLocationActivity</string>
+    <string name="title_activity_google_map">GoogleMapActivity</string>
+    <string name="title_activity_gaydar">GaydarActivity</string>
+    <string name="gaydar">GAYDAR</string>
+    <string name="title_activity_gaydar_near_by">GaydarNearByActivity</string>
+    <string name="gaydar_nearby">Nearby</string>
+    <string name="list_count">0 Result found</string>
+    <string name="title_activity_filter">FilterActivity</string>
+    <string name="filter">FILTER</string>
+    <string name="btnclear">CLEAR</string>
+    <string name="age">Age</string>
+    <string name="keyword">Keywords</string>
+    <string name="online_now">Online Now</string>
+    <string name="title_activity_gaydar_age_settings">GaydarAgeSettingsActivity</string>
+    <string name="set_age">SET AGE</string>
+    <string name="set_height">SET HEIGHT</string>
+    <string name="minimum">Minimum</string>
+    <string name="maximum">Maximum</string>
+    <string name="title_activity_gaydar_height_settings">GaydarHeightSettingsActivity</string>
+    <string name="loading_rec">Loading recommendations..</string>
+    <string name="title_activity_gaydar_weight_settings">GaydarWeightSettingsActivity</string>
+    <string name="done_btn">Done</string>
+    <string name="clear_btn">Clear Button</string>
+    <string name="save_btn">Save Button</string>
+    <string name="set_weight">SET WEIGHT</string>
+    <string name="double_hyphen">--</string>
+    <string name="colon">:</string>
+    <string name="title_activity_gaydar_location_settings">GaydarLocationSettingsActivity</string>
+    <string name="set_location">SET LOCATION</string>
+    <string name="location_anywhere">Location Anywhere</string>
+    <string name="location_near_me">Location Near Me</string>
+    <string name="location_user_current">Use My Current Location</string>
+    <string name="title_activity_gaydar_keyword_settings">GaydarKeywordSettingsActivity</string>
+    <string name="set_keyword">SET KEYWORDS</string>
+    <string name="title_activity_meet_me">MeetMeActivity</string>
+    <string name="add_meet">MeetMe add button</string>
+    <string name="meet_me">MEET ME</string>
+    <string name="title_activity_meet_me_open_date">MeetMeOpenDateActivity</string>
+    <string name="title_activity_meet_me_my_date">MeetMeMyDateActivity</string>
+    <string name="filter_button">Filter Button</string>
+    <string name="contentDescription">content Description</string>
+
+    <color name="tab_active">#FFFFFF</color>
+    <color name="tab_inactive">#000000</color>
+
+    <string name="title_activity_meet_me_details">MeetMeDetailsActivity</string>
+    <string name="title_activity_meet_me_select_users">MeetMeSelectUsersActivity</string>
+    <string name="select_user">SELECT USER</string>
+    <string name="status_text">Status text</string>
+    <string name="date_and_time">Date &amp; Time</string>
+    <string name="suggest_value">Suggest Venue</string>
+    <string name="title_activity_foursquare_location">FoursquareLocationActivity</string>
+    <string name="set_lcation">SET LOCATION</string>
+    <string name="title_activity_hot_spots">HotSpotsActivity</string>
+    <string name="hotsports">HOT SPOTS</string>
+    <string name="hotspot_nearby">NEARBY</string>
+    <string name="hotspot_cat">Food</string>
+    <string name="title_activity_favorites">FavoritesActivity</string>
+    <string name="favorites">FAVORITES</string>
+    <string name="title_activity_foursquare_location_details">FoursquareLocationDetailsActivity</string>
+    <string name="title_activity_settings">SettingsActivity</string>
+    <string name="app_settings">SETTINGS</string>
+    <string name="notifications">NOTIFICATIONS</string>
+    <string name="push_notifications">PUSH NOTIFICATIONS</string>
+    <string name="alert_when_some_one_marks_me_fav">Alert when some one marks me Fav</string>
+    <string name="alert_for_unread_messages_while_offline">Alert for unread messages while offline</string>
+    <string name="account_settings">ACCOUNT SETTINGS</string>
+    <string name="change_password">CHANGE PASSWORD</string>
+    <string name="blocked_user_list">BLOCKED USERS LIST</string>
+    <string name="terms_and_conditions">TERMS &amp; CONDITIONS</string>
+    <string name="privacy_policy">PRIVACY POLICY</string>
+    <string name="title_activity_privacy_policy">PrivacyPolicyActivity</string>
+    <string name="title_activity_termas_and_conditions">TermasAndConditionsActivity</string>
+    <string name="title_activity_recommendation_settngs">RecommendationSettngsActivity</string>
+    <string name="recommendation_settings">RECOMMENDATION SETINGS</string>
+    <string name="title_activity_change_password">ChangePasswordActivity</string>
+    <string name="title_activity_blocked_users">BlockedUsersActivity</string>
+    <string name="blocked_users">BLOCKED USERS</string>
+    <string name="title_activity_tell_your_friend">TellYourFriendActivity</string>
+    <string name="tell_your_friend_email_body">I have been using MenchD and would love for you to join me and start discovering people around you.Use this link to download MenchD app from android market:www.menchd.com</string>
+    <string name="tell_your_friend_email_subject">Hey checkout Menchd</string>
+    <string name="tell_your_friend_sms">Hai..Check out my updtaes on Menchd, I also recommend you to use Menched-a cool Android app.</string>
+    <string name="title_activity_event">EventActivity</string>
+    <string name="events">EVENTS</string>
+    <string name="title_activity_events_day">EventsDayActivity</string>
+    <string name="title_activity_event_details">EventDetailsActivity</string>
+    <string name="event_details">EVENT DETAILS</string>
+    <string name="title_activity_home_grid">HomeGridActivity</string>
+    <string name="title_activity_video_play">VideoPlayActivity</string>
+    <string name="my_video">My Video</string>
+    <string name="title_activity_video_upload">VideoUploadActivity</string>
+    <string name="upload_video">Upload Video</string>
+
+</resources>

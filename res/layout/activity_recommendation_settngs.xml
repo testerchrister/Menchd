@@ -1,0 +1,100 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RecommendationSettngsActivity"
+    android:background="@android:color/background_dark" >
+
+<RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/topnav"
+        android:orientation="horizontal"
+        android:padding="5dp"
+        android:id="@+id/topnav" >
+        <ImageButton
+             android:id="@+id/clear_btn"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_alignParentLeft="true"
+             android:layout_centerVertical="true"
+             android:background="@null"
+             android:src="@drawable/buttonback"
+             android:contentDescription="@string/clear_btn" /> 
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"   
+            android:layout_centerInParent="true"         
+            android:text="@string/recommendation_settings"
+            android:textColor="@android:color/white" />                
+    </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/basics_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/topnav"
+                android:background="@drawable/loginbg"
+                android:orientation="vertical"
+                android:padding="5dp" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center|center_horizontal"
+                    android:gravity="center|center_horizontal"
+                    android:paddingTop="10dp" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="GET RECOMMENDATIONS - " />
+
+                    <TextView
+                        android:id="@+id/rec_status"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Locally"
+                        android:textColor="@color/red" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center|center_horizontal"
+                    android:orientation="horizontal" 
+                    android:paddingTop="20dp">
+
+                    <Button
+                        android:id="@+id/local_btn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/left_round_btn"
+                        android:paddingLeft="30dp"
+                        android:paddingRight="30dp"
+                        android:text="Locally"
+                        android:textSize="12sp"
+                        android:textStyle="bold"
+                        android:textColor="@android:color/white" />
+
+                    <Button
+                        android:id="@+id/global_btn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/right_round_btn_gray"
+                        android:paddingLeft="30dp"
+                        android:paddingRight="30dp"
+                        android:text="Globally"
+                        android:textStyle="bold"
+                        android:textSize="12sp"
+                        android:textColor="@android:color/white"
+                        android:layout_marginLeft="2dp" />
+                </LinearLayout>
+            </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,70 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GaydarKeywordSettingsActivity"
+    android:background="@android:color/background_dark" >
+<RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/topnav"
+        android:orientation="horizontal"
+        android:padding="5dp"
+        android:id="@+id/topnav" >
+        <ImageButton
+             android:id="@+id/clear_btn"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_alignParentLeft="true"
+             android:layout_centerVertical="true"
+             android:background="@null"
+             android:src="@drawable/btnreset"
+             android:contentDescription="@string/clear_btn" /> 
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"   
+            android:layout_centerInParent="true"         
+            android:text="@string/set_keyword"
+            android:textColor="@android:color/white" />
+        <ImageButton
+             android:id="@+id/save_btn"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_alignParentRight="true"
+             android:layout_centerVertical="true"
+             android:background="@null"
+             android:src="@drawable/btnsave"
+             android:contentDescription="@string/save_btn"  />        
+    </RelativeLayout>
+	<LinearLayout
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:id="@+id/basics_layout"
+			android:background="@drawable/loginbg"
+			android:padding="5dp"
+			android:orientation="vertical"
+			android:layout_below="@+id/topnav">
+        <RelativeLayout 
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp">
+            <TextView
+                android:id="@+id/keyword_lbl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/keyword"
+                android:layout_centerVertical="true"/>
+            <EditText
+                android:id="@+id/keyword_txt" 
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:lines="1"
+                android:layout_toRightOf="@+id/keyword_lbl"
+                android:layout_marginLeft="5dp"
+                android:padding="3dp"
+                android:background="@drawable/box_bg_inner"/>
+        </RelativeLayout>
+        </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,154 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AskQuestion"
+    android:orientation="vertical"
+    android:background="@android:color/black" >
+	<RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"          
+        android:background="@drawable/topnav"
+        android:orientation="horizontal"
+        android:padding="5dp"
+         >
+		<Button
+		    android:layout_width="38dp"
+		    android:layout_height="38dp"
+		    android:layout_alignParentLeft="true"
+		    android:background="@drawable/delete"
+		    android:id="@+id/exit"/>
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_centerInParent="true"
+            android:text="@string/question_btn"
+            android:textColor="@android:color/white" />
+        <Button 
+            android:layout_width="38dp"
+		    android:layout_height="38dp"
+		    android:layout_alignParentRight="true"
+		    android:background="@drawable/btnpop"
+		    android:id="@+id/skip"/>
+    </RelativeLayout>
+<TabHost 
+    android:id="@+id/TabHost01" 
+    android:layout_width="wrap_content" 
+    android:layout_height="wrap_content"
+    android:background="@drawable/loginbg">
+    <TabWidget 
+        android:id="@android:id/tabs" 
+        android:layout_width="fill_parent" 
+        android:layout_height="wrap_content" />
+    <FrameLayout 
+        android:id="@android:id/tabcontent" 
+        android:layout_width="fill_parent" 
+        android:layout_height="wrap_content" 
+        android:paddingTop="65dp">
+ <!--      <AnalogClock 
+          android:id="@+id/AnalogClock01" 
+          android:layout_width="wrap_content" 
+          android:layout_height="wrap_content">
+          
+      </AnalogClock> -->
+      <RelativeLayout 
+          android:id="@+id/your_ans_tab"
+          android:layout_width="fill_parent"
+          android:layout_height="match_parent"
+          android:padding="5dp">
+          <LinearLayout 
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="horizontal"
+              android:id="@+id/your_qstn_layout">
+              <ImageView 
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:src="@drawable/question"/>
+              <TextView 
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:paddingLeft="5dp"
+                  android:id="@+id/your_question"/>
+          </LinearLayout>
+          <LinearLayout 
+              android:id="@+id/your_ans_grp"
+              android:layout_width="wrap_content"
+              android:layout_height="fill_parent"
+              android:orientation="vertical"
+              android:layout_below="@+id/your_qstn_layout"
+              android:paddingTop="10dp">
+              <RadioGroup
+			    android:layout_width="fill_parent"
+			    android:layout_height="wrap_content"
+			    android:orientation="vertical"
+			    android:id="@+id/your_radio_grp">
+
+			</RadioGroup>
+			
+          </LinearLayout>
+
+          <Button
+              android:id="@+id/nxt_btn"
+              android:layout_width="match_parent"
+              android:layout_height="40dp"
+              android:layout_alignParentBottom="true"
+              android:background="@drawable/graybutton"
+              android:text="Next"
+              android:textAlignment="center"
+               />
+
+      </RelativeLayout>
+		<RelativeLayout 
+          android:id="@+id/exp_ans_tab"
+          android:layout_width="fill_parent"
+          android:layout_height="match_parent"
+          android:padding="5dp">
+          <LinearLayout 
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="horizontal"
+              android:id="@+id/expected_qstn_layout">
+              <ImageView 
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:src="@drawable/question"/>
+              <TextView 
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:paddingLeft="5dp"
+                  android:id="@+id/expected_question"/>
+          </LinearLayout>
+          <LinearLayout 
+              android:id="@+id/expected_ans_grp"
+              android:layout_width="wrap_content"
+              android:layout_height="fill_parent"
+              android:orientation="vertical"
+              android:layout_below="@+id/expected_qstn_layout"
+              android:paddingTop="10dp">
+              <RadioGroup
+			    android:layout_width="fill_parent"
+			    android:layout_height="wrap_content"
+			    android:orientation="vertical"
+			    android:id="@+id/expected_radio_grp">
+			</RadioGroup>
+			
+          </LinearLayout>
+
+          <Button
+              android:id="@+id/submit_btn"
+              android:layout_width="match_parent"
+              android:layout_height="40dp"
+              android:layout_alignParentBottom="true"
+              android:background="@drawable/btnsubmit"
+              android:textColor="@android:color/white"
+              android:text="@string/submit"
+              android:textAlignment="center"
+               />
+
+      </RelativeLayout>
+    </FrameLayout>
+  </TabHost>
+</LinearLayout>

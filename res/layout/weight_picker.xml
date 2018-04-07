@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    <NumberPicker
+        android:id="@+id/weightPicker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="10dp" />
+    <Button
+        android:id="@+id/set_weight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/weightPicker"
+        android:layout_centerHorizontal="true"
+        android:layout_marginRight="16dp"
+        android:text="@string/done_btn" />
+</RelativeLayout>

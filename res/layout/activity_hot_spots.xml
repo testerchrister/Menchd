@@ -1,0 +1,66 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HotSpotsActivity"
+    android:background="@android:color/background_dark" >
+<RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/topnav"
+        android:orientation="horizontal"
+        android:padding="5dp"
+        android:id="@+id/topnav" >
+        <ImageButton
+             android:id="@+id/clear_btn"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_alignParentLeft="true"
+             android:layout_centerVertical="true"
+             android:background="@null"
+             android:src="@drawable/buttonback"
+             android:contentDescription="@string/clear_btn" /> 
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"   
+            android:layout_centerInParent="true"         
+            android:text="@string/hotsports"
+            android:textColor="@android:color/white" />                
+    </RelativeLayout>
+    <LinearLayout
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:id="@+id/basics_layout"
+		android:background="@drawable/loginbg"
+		android:orientation="vertical"
+		android:layout_below="@+id/topnav">
+        <LinearLayout
+            android:id="@+id/hotsotnav" 
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/hotspotnav"
+            android:orientation="horizontal">
+            <TextView 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="@string/hotspot_nearby"
+                android:textColor="@android:color/white"/>
+            <TextView 
+                android:id="@+id/spot_category"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/hotspot_cat"
+                android:textColor="@android:color/white"
+                android:textStyle="bold"
+                android:layout_marginLeft="25dp"/>
+        </LinearLayout>
+        <ListView 
+		    android:id="@+id/list_view"
+		    android:layout_width="match_parent"
+		    android:layout_height="fill_parent"></ListView>
+        </LinearLayout>
+		
+</RelativeLayout>

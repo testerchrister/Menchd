@@ -1,0 +1,96 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GaydarAgeSettingsActivity" >
+
+<RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/topnav"
+        android:orientation="horizontal"
+        android:padding="5dp"
+        android:id="@+id/topnav" >
+        <ImageButton
+             android:id="@+id/clear_btn"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_alignParentLeft="true"
+             android:layout_centerVertical="true"
+             android:background="@null"
+             android:src="@drawable/btnreset" /> 
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"   
+            android:layout_centerInParent="true"         
+            android:text="@string/set_age"
+            android:textColor="@android:color/white" />
+        <ImageButton
+             android:id="@+id/save_btn"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_alignParentRight="true"
+             android:layout_centerVertical="true"
+             android:background="@null"
+             android:src="@drawable/btnsave" />        
+    </RelativeLayout>
+    <LinearLayout
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:id="@+id/basics_layout"
+		android:background="@drawable/loginbg"
+		android:padding="5dp"
+		android:orientation="vertical"
+		android:layout_below="@+id/topnav">
+    	<RelativeLayout
+	    android:id="@+id/minimum_age"
+		android:layout_width="match_parent"
+		android:layout_height="50dp"
+		android:padding="5dp"
+		android:background="@color/profile_light_gray">
+		<TextView 
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_alignParentLeft="true"
+			android:layout_centerVertical="true"
+			android:text="@string/minimum"/>
+		<EditText
+		    android:id="@+id/minimum_age_txt" 
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_alignParentRight="true"
+			android:layout_centerVertical="true"
+			android:inputType="number"
+			android:maxLength="2"
+			android:background="@null"
+			android:hint="--"/>
+		</RelativeLayout>
+		<RelativeLayout
+	    android:id="@+id/maximum_age"
+		android:layout_width="match_parent"
+		android:layout_height="50dp"
+		android:padding="5dp"
+		android:background="@color/profile_dark_gray">
+		<TextView 
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_alignParentLeft="true"
+			android:layout_centerVertical="true"
+			android:text="@string/maximum"/>
+
+		<EditText
+		    android:id="@+id/maximum_age_txt" 
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_alignParentRight="true"
+			android:layout_centerVertical="true"
+			android:inputType="number"
+			android:maxLength="2"
+			android:background="@null"
+			android:hint="--"/>
+		</RelativeLayout>
+   	</LinearLayout>
+
+</RelativeLayout>

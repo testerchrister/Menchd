@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:weightSum="1" >
+    <RelativeLayout 
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight=".3">
+
+        <ImageView
+            android:id="@+id/open_user_image"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_margin="5dp"
+            android:padding="3dp"
+            android:src="@drawable/confirmthumb"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight=".7"
+        android:paddingLeft="5dp"
+        android:layout_marginRight="5dp"  >
+
+        <RelativeLayout
+            android:id="@+id/open_data"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="5dp">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_toLeftOf="@+id/date_day_month">
+
+                <TextView
+                    android:id="@+id/people_interest"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0 people interested"
+                    android:textSize="12dp"
+                    android:textColor="@color/red" />
+
+                <TextView
+                    android:id="@+id/time_location"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/people_interest"
+                    android:layout_marginTop="5dp"
+                    android:textStyle="bold"
+                    android:text="6 PM @ Kuttanchetan&apos;s Chayakkada ddscds adcsadsadsa"
+                    android:textSize="10dp" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/date_day_month"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/meet_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:text="12"
+                    android:textSize="18dp" />
+
+                <TextView
+                    android:id="@+id/meet_day_month"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="12dp"
+                    android:text="MON JULY" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true" >
+
+            <ImageButton
+                android:id="@+id/confirm_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/btnsonfirm"
+                android:background="@null"/>
+
+        </RelativeLayout>
+</RelativeLayout>
+
+</LinearLayout>
